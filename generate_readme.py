@@ -6,24 +6,42 @@ def process_resource(resource, indent_level=0):
     name = resource['name']
     lines = []
     
-    # Handle resources that have both description and sub-resources
+    # Handle resources with description and/or URL
     if 'description' in resource:
         description = resource['description']
-        if description.strip().startswith('```'):
-            lines.append(f"{indent}- **`{name}`**  \n{indent}{description}\n")
+        url = resource.get('url', '#')
+        if url and url != '#':
+            lines.append(f"{indent}- **[`{name}`]({url})**  \n{indent}  {description}\n")
         else:
-            url = resource.get('url', '#')
-            if url and url != '#':
-                lines.append(f"{indent}- **[`{name}`]({url})**  \n{indent}  {description}\n")
-            else:
-                lines.append(f"{indent}- **`{name}`**  \n{indent}  {description}\n")
+            lines.append(f"{indent}- **`{name}`**  \n{indent}  {description}\n")
     
-    # Handle sub-resources if they exist
+    # Handle nested resources (e.g., in subcategories)
     if 'resources' in resource:
-        if 'description' not in resource:  # Only add name if no description exists
-            lines.append(f"{indent}- **{name}**")
         for sub_resource in resource['resources']:
             lines.extend(process_resource(sub_resource, indent_level + 1))
+    
+    return lines
+
+def process_subcategory(subcategory, indent_level=1):
+    """Helper function to process subcategories recursively"""
+    lines = []
+    indent = '  ' * indent_level
+    name = subcategory['name']
+    lines.append(f"\n{'#' * (indent_level + 2)} {name}\n")
+    
+    if 'description' in subcategory:
+        lines.append(f"{subcategory['description']}\n")
+    
+    if 'resources' in subcategory:
+        if subcategory['resources']:  # Only add if there are resources
+            for resource in subcategory['resources']:
+                lines.extend(process_resource(resource, indent_level + 1))
+        else:
+            lines.append(f"{indent}- *No resources listed yet.*\n")
+    
+    if 'subcategories' in subcategory:
+        for sub_subcategory in subcategory['subcategories']:
+            lines.extend(process_subcategory(sub_subcategory, indent_level + 1))
     
     return lines
 
@@ -51,9 +69,10 @@ def generate_markdown_from_json(json_file, output_file):
     md_content.append('# [<img src="https://cdn.rawgit.com/aradfarahani/awesome-geophysics/master/cover.png">](https://github.com/aradfarahani/awesome-geophysics)')
     md_content.append('')
     
-    # Add introduction paragraph
+    # Add introduction with metadata
+    metadata = data['AwesomeGeophysics']['metadata']
     md_content.append('<p align="justify">')
-    md_content.append('Welcome to <strong>Awesome Geophysics</strong> – a community-curated, ever-evolving collection of resources that spans the full spectrum of geophysical sciences. Whether you\'re a student just beginning your journey, a researcher pushing the boundaries of the field, or a professional applying cutting-edge methods, this guide is your one-stop destination for software, datasets, educational materials, and much more. Let\'s explore the Earth\'s hidden depths and stay connected with the vibrant global geophysics community!')
+    md_content.append(f"Welcome to <strong>{metadata['title']}</strong> – {metadata['description']} Whether you're a student just beginning your journey, a researcher pushing the boundaries of the field, or a professional applying cutting-edge methods, this guide is your one-stop destination for software, datasets, educational materials, and much more. Let’s explore the Earth’s hidden depths and stay connected with the vibrant global geophysics community!")
     md_content.append('</p>')
     md_content.append('')
     md_content.append('---')
@@ -72,9 +91,8 @@ def generate_markdown_from_json(json_file, output_file):
                 sub_name = subcategory['name']
                 sub_anchor = sub_name.lower().replace(' ', '-').replace('&', '').replace(',', '').replace('/', '')
                 toc.append(f'  - [{sub_name}](#{sub_anchor})')
-
     
-    # Add the footer sections to TOC
+    # Add footer sections to TOC
     toc.append('- [Contributors](#contributors)')
     toc.append('- [How to Contribute](#how-to-contribute)')
     toc.append('- [License](#license)')
@@ -109,24 +127,16 @@ def generate_markdown_from_json(json_file, output_file):
         else:
             # Handle regular sections (non-table format)
             if 'resources' in category:
-                for resource in category['resources']:
-                    md_content.extend(process_resource(resource))
+                if category['resources']:
+                    for resource in category['resources']:
+                        md_content.extend(process_resource(resource))
+                else:
+                    md_content.append('- *No resources listed yet.*\n')
             
             if 'subcategories' in category:
                 for subcategory in category['subcategories']:
-                    sub_name = subcategory['name']
-                    md_content.append(f"\n### {sub_name}")
-                    md_content.append('')
-                    
-                    if 'description' in subcategory:
-                        md_content.append(subcategory['description'])
-                        md_content.append('')
-                    
-                    if 'resources' in subcategory:
-                        for resource in subcategory['resources']:
-                            md_content.extend(process_resource(resource))
+                    md_content.extend(process_subcategory(subcategory))
         
-        # Add back to top link ONLY after main category sections
         md_content.append('')
         md_content.append('| ▲ [Top](#awesome-geophysics) |')
         md_content.append('| --- |')
@@ -138,11 +148,12 @@ def generate_markdown_from_json(json_file, output_file):
     md_content.append('')
     md_content.append('Thanks to our many contributors!')
     md_content.append('')
+    md_content.append(f"See all contributors at [{metadata['contributors']}]({metadata['contributors']})")
+    md_content.append('')
     md_content.append('[![Contributors](https://contrib.rocks/image?repo=aradfarahani/awesome-geophysics&t=1742885103)](https://github.com/aradfarahani/awesome-geophysics/graphs/contributors)')
     md_content.append('')
     md_content.append('| ▲ [Top](#awesome-geophysics) |')
     md_content.append('| --- |')
-    md_content.append('')
     md_content.append('---')
     md_content.append('')
 
@@ -150,7 +161,7 @@ def generate_markdown_from_json(json_file, output_file):
     md_content.append('## How to Contribute')
     md_content.append('')
     md_content.append('This list is a community effort and grows with your contributions!  ')
-    md_content.append('Have a tool, dataset, blog, or resource to add? Here\'s how you can help:')
+    md_content.append('Have a tool, dataset, blog, or resource to add? Here’s how you can help:')
     md_content.append('')
     md_content.append('1. **Submit a Suggestion:**  ')
     md_content.append('   Open an issue or pull request on our [GitHub repository](https://github.com/aradfarahani/awesome-geophysics) to add or update resources.')
@@ -160,12 +171,10 @@ def generate_markdown_from_json(json_file, output_file):
     md_content.append('')
     md_content.append('Together, we can continue to make Awesome Geophysics the definitive resource for the global geophysical community.')
     md_content.append('')
-    md_content.append('> **For more detailed guidelines, please check the [CONTRIBUTING.md](https://github.com/aradfarahani/awesome-geophysics/blob/master/CONTRIBUTING.md) file.**')
-    md_content.append('')
+    md_content.append('> **For more detailed guidelines, please check the [CONTRIBUTING.md](https://github.com/aradfarahani/awesome-geophysics/blob/main/CONTRIBUTING.md) file.**')
     md_content.append('')
     md_content.append('| ▲ [Top](#awesome-geophysics) |')
     md_content.append('| --- |')
-    md_content.append('')
     md_content.append('---')
     md_content.append('')
 
@@ -174,17 +183,15 @@ def generate_markdown_from_json(json_file, output_file):
     md_content.append('')
     md_content.append('[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0)')
     md_content.append('')
-    md_content.append('To the extent possible under law, all contributors have waived all copyright and')
-    md_content.append('related or neighboring rights to this work. ')
+    md_content.append(f"This project is licensed under {metadata['license']}. To the extent possible under law, all contributors have waived all copyright and related or neighboring rights to this work.")
     md_content.append('')
     md_content.append('| ▲ [Top](#awesome-geophysics) |')
     md_content.append('| --- |')
-    md_content.append('')
     md_content.append('---')
     md_content.append('')
 
     # Add closing paragraph
-    md_content.append('*Whether you\'re diving into seismic data processing, modeling Earth\'s subsurface, or simply looking for inspiration, we invite you to explore, share, and contribute. Let\'s push the boundaries of geophysical exploration and understanding—together!*')
+    md_content.append('*Whether you’re diving into seismic data processing, modeling Earth’s subsurface, or simply looking for inspiration, we invite you to explore, share, and contribute. Let’s push the boundaries of geophysical exploration and understanding—together!*')
     md_content.append('')
 
     # Write to output file
@@ -193,6 +200,6 @@ def generate_markdown_from_json(json_file, output_file):
 
 if __name__ == '__main__':
     input_json = 'awesome_geophysics.json'
-    output_md = 'README.md'
+    output_md = 'KREADME.md'
     generate_markdown_from_json(input_json, output_md)
     print(f"Markdown file generated: {output_md}")
