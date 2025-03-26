@@ -72,6 +72,28 @@ def generate_toc(categories, indent=0):
             toc.extend(generate_toc(category['subcategories'], indent + 1))
     return toc
 
+def github_star_count(url):
+    github_stars = ""
+    # Check if URL points to GitHub at all
+    if "github.com" not in url.lower():
+        return github_stars  # Return empty
+
+    # Remove trailing slash, if any
+    clean_url = url.rstrip("/")
+
+    # Split into parts
+    parts = clean_url.split("/")
+    # We expect something like ["https:", "", "github.com", "<USERNAME>", "<REPO>"]
+
+    if len(parts) >= 5:
+        github_username = parts[-2]
+        github_repo = parts[-1]
+        github_stars = (
+            f"[![GitHub stars](https://img.shields.io/github/stars/{github_username}/{github_repo}?style=social)]"
+            f"(https://github.com/{github_username}/{github_repo}/stargazers)"
+        )
+    return github_stars
+
 def generate_markdown_from_json(json_file, output_file):
     """Generate a README.md file from the JSON data.
 
@@ -134,13 +156,14 @@ def generate_markdown_from_json(json_file, output_file):
             md_content.append('')
         if name == "Software and Tools":
             # Table format for Software and Tools
-            md_content.append('| **Name** | **Description** |')
-            md_content.append('|----------|-----------------|')
+            md_content.append('| **Name** | **Description** | **GitHub Stars** |')
+            md_content.append('|----------|-----------------| -----------------|')
             for resource in category['resources']:
                 res_name = resource.get('name', 'Unnamed Resource')
                 desc = resource.get('description', 'No description available')
                 url = resource.get('url', '#')
-                md_content.append(f"| **[`{res_name}`]({url})** | {desc} |")
+                github_stars = github_star_count(url)
+                md_content.append(f"| **[`{res_name}`]({url})** | {desc} | {github_stars} |")
             md_content.append('')
         else:
             # List format for other categories
