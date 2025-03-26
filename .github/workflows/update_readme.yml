@@ -3,7 +3,8 @@ name: Update README from JSON
 on:
   push:
     paths:
-      - "awesome_geophysics.json"
+      - "awesome_geophysics.json" # Trigger on changes to the JSON file
+      - "generate_readme.py" # Trigger on changes to the script
   workflow_dispatch: # Allows manual triggering
   schedule:
     - cron: "0 0 * * 0" # Runs at 00:00 UTC every Sunday
