@@ -10,7 +10,7 @@ def process_resource(resource, indent_level=0):
     Returns:
         list: A list of Markdown-formatted lines.
     """
-    indent = '  ' * indent_level
+    indent = ' ' * indent_level
     name = resource.get('name', 'Unnamed Resource')
     description = resource.get('description', '')
     url = resource.get('url', '')
