@@ -184,7 +184,7 @@ def generate_markdown_from_json(json_file, output_file):
     md_content.append('')
     md_content.append('Thanks to our many contributors!')
     md_content.append('')
-    md_content.append('[![Contributors](https://contrib.rocks/image?repo=aradfarahani/awesome-geophysics&t=1742885103)](https://github.com/aradfarahani/awesome-geophysics/graphs/contributors)')
+    md_content.append('[![Contributors](https://contrib.rocks/image?repo=aradfarahani/awesome-geophysics)](https://github.com/aradfarahani/awesome-geophysics/graphs/contributors)')
     md_content.append('')
     md_content.append('| ▲ [Top](#awesome-geophysics) |')
     md_content.append('| --- |')
