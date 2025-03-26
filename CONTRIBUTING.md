@@ -80,9 +80,10 @@ To maintain consistency, please adhere to the JSON structure:
 - If adding proprietary software or paid resources, note any licensing or cost details in the description.
 
 ## Code of Conduct
-- Be respectful and inclusive in all interactions.
-- Provide constructive feedback during reviews.
-- Avoid duplicate entries—check if a resource already exists before adding it.
+We’re committed to fostering a welcoming and inclusive community. Please review our [Code of Conduct](https://github.com/aradfarahani/awesome-geophysics/blob/main/CODE_OF_CONDUCT.md) before contributing. Key points include:
+- Be respectful and kind to others.
+- Provide constructive feedback.
+- Avoid harassment, trolling, or inappropriate behavior.
 
 ## Questions?
 If you’re unsure about anything:
