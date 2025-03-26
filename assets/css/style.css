@@ -1,0 +1,280 @@
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  background: linear-gradient(135deg, #eceff1 0%, #cfd8dc 100%);
+  color: #212121;
+  padding: 30px;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+  color: #f5f5f5;
+}
+
+/* Hyperlink Base Styles (for all <a> tags) */
+a {
+  color: #ff69b4; /* Barbie pink in light mode */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffb6c1; /* Lighter pink on hover */
+}
+
+body.dark-mode a {
+  color: #ffb6c1; /* Softer pink in dark mode for contrast */
+}
+
+body.dark-mode a:hover {
+  color: #fff; /* White on hover in dark mode */
+}
+
+/* Header Styles */
+header {
+  background: #ff69b4; /* Barbie Pink */
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: fadeIn 0.5s ease-in;
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Spread content */
+  align-items: center; /* Vertically center items */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+header h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff; /* White in header */
+  margin: 0 15px;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: #ffe6f2; /* Light pink hover */
+}
+
+/* Main Content */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: background 0.4s ease;
+  animation: slideUp 0.6s ease-out;
+}
+
+body.dark-mode main {
+  background: #363636; /* Lighter dark gray for contrast */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #ff69b4; /* Barbie Pink */
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.7s ease-in;
+}
+
+footer a {
+  color: #fff; /* White in footer */
+  font-weight: 400;
+}
+
+footer a:hover {
+  color: #ffe6f2; /* Light pink hover */
+  text-decoration: underline;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: linear-gradient(
+    45deg,
+    #ff69b4,
+    #ffb6c1
+  ); /* Gradient from Barbie pink to light pink */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4); /* Pink glow */
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.theme-toggle:hover {
+  background: linear-gradient(
+    45deg,
+    #ffb6c1,
+    #ff69b4
+  ); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slight scale up */
+  box-shadow: 0 6px 16px rgba(255, 105, 180, 0.6); /* Stronger glow */
+}
+
+.theme-toggle:active {
+  transform: scale(0.95); /* Slight shrink on click */
+}
+
+.theme-toggle::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(30deg);
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.theme-toggle:hover::before {
+  left: 100%; /* Shine moves across on hover */
+}
+
+/* Dark Mode Styles for Theme Toggle */
+body.dark-mode .theme-toggle {
+  background: linear-gradient(
+    45deg,
+    #505050,
+    #ffb6c1
+  ); /* Dark gray to pink gradient */
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4); /* Softer pink glow */
+}
+
+body.dark-mode .theme-toggle:hover {
+  background: linear-gradient(
+    45deg,
+    #616161,
+    #fff
+  ); /* Gray to white gradient */
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.5); /* White glow */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .theme-toggle {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px 20px; /* Reduce padding for less vertical bulk */
+    flex-direction: row; /* Keep it horizontal, but wrap */
+    flex-wrap: wrap;
+    gap: 10px; /* Add spacing between items */
+    align-items: center; /* Center everything vertically */
+  }
+
+  header h1 {
+    font-size: 1.3rem; /* Slightly smaller for compactness */
+    flex: 1 1 100%; /* Full width to avoid squeezing */
+    margin-bottom: 0; /* Remove extra spacing */
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap; /* Allow links to wrap if needed */
+    gap: 8px; /* Tighter spacing between links */
+    margin-top: 0; /* Remove extra top margin */
+    width: auto; /* Let it shrink naturally */
+  }
+
+  nav a {
+    margin: 0; /* Remove individual margins */
+    font-size: 0.85rem; /* Smaller, tappable size */
+  }
+
+  .theme-toggle {
+    align-self: center; /* Center it vertically */
+    margin-top: 0; /* No extra margin */
+    padding: 6px 12px; /* Smaller button */
+    font-size: 0.8rem; /* Readable but compact */
+  }
+}

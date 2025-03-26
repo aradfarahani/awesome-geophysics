@@ -1,0 +1,1219 @@
+{
+  "AwesomeGeophysics": {
+    "metadata": {
+      "title": "Awesome Geophysics",
+      "description": "A community-curated collection of geophysical resources including software, datasets, educational materials, and more.",
+      "license": "CC0",
+      "contributors": "https://github.com/aradfarahani/awesome-geophysics/graphs/contributors"
+    },
+    "categories": [
+      {
+        "name": "Software and Tools",
+        "description": "Enhance your geophysical workflows with these essential software solutions:",
+        "resources": [
+          {
+            "name": "Auralib",
+            "description": "Python package to support investigation of geoscience problems including geophysics, rock physics, petrophysics, and data read/write in common formats.",
+            "url": "https://github.com/whamlyn/auralib"
+          },
+          {
+            "name": "bh_tomo",
+            "description": "Numba-accelerated computation of surface wave dispersion.",
+            "url": "https://github.com/groupeLIAMG/bh_tomo"
+          },
+          {
+            "name": "Bruges",
+            "description": "Various geophysical equations and tools.",
+            "url": "https://github.com/agile-geoscience/bruges/tree/master/bruges"
+          },
+          {
+            "name": "celeri",
+            "description": "A python-based package designed to image earthquake cycle activity including the spatial and time varying fault coupling across geometrically complex fault systems at large scales.",
+            "url": "https://github.com/brendanjmeade/celeri"
+          },
+          {
+            "name": "disba",
+            "description": "Borehole radar and seismic tomography package.",
+            "url": "https://github.com/keurfonluu/disba"
+          },
+          {
+            "name": "emsig",
+            "description": "Controlled-source electromagnetic modellers for layered (`empymod`) and three-dimensional (`emg3d`) anisotropic media.",
+            "url": "https://emsig.xyz/"
+          },
+          {
+            "name": "Fatiando a Terra",
+            "description": "A Python toolkit for geophysical modeling, ideal for addressing gravity, magnetics, and seismic challenges.",
+            "url": "https://www.fatiando.org/"
+          },
+          {
+            "name": "Front End",
+            "description": "Preprocess seismic data with various functions, such as resampling, vertical stacking, nodal data assembling, trace swapping, and format conversion.",
+            "url": "https://geogiga.com/products/frontend/"
+          },
+          {
+            "name": "Geoelectricspy",
+            "description": "An interactive 3D visualization tool for subsurface resistivity data—perfect for understanding geoelectric structures.",
+            "url": "https://github.com/aradfarahani/Geoelectricspy"
+          },
+          {
+            "name": "GeoPhyInv",
+            "description": "Julia Toolbox for Geophysical Modeling and Inverse Problems.",
+            "url": "https://github.com/pawbz/GeoPhyInv.jl"
+          },
+          {
+            "name": "Geopsy",
+            "description": "A tool for processing ambient vibration data, widely used in site characterization and microzonation studies.",
+            "url": "http://www.geopsy.org/"
+          },
+          {
+            "name": "GemPy",
+            "description": "3-D structural geological modelling software with implicit modelling and support for stochastic modelling.",
+            "url": "https://github.com/gempy-project/gempy"
+          },
+          {
+            "name": "GMT (Generic Mapping Tools)",
+            "description": "A robust toolset for creating high-quality maps and plots used across geoscience disciplines.",
+            "url": "https://www.generic-mapping-tools.org/"
+          },
+          {
+            "name": "gprMax",
+            "description": "A comprehensive Python library for seismology, perfect for waveform analysis, data handling, and visualization.",
+            "url": "http://www.gprmax.com"
+          },
+          {
+            "name": "GPRPy",
+            "description": "Multi-format, GUI-based GPR processing and visualization.",
+            "url": "https://github.com/NSGeophysics/GPRPy"
+          },
+          {
+            "name": "hvsrpy",
+            "description": "A Python package for horizontal-to-vertical spectral ratio processing.",
+            "url": "https://github.com/jpvantassel/hvsrpy"
+          },
+          {
+            "name": "Madagascar",
+            "description": "An open-source platform designed for reproducible geophysical data processing and analysis.",
+            "url": "http://www.ahay.org/wiki/Main_Page"
+          },
+          {
+            "name": "MDIO",
+            "description": "Open source chunked and compressed cloud storage for seismic data based on Zarr with fast seismic ingestion and export tools – [Docs](https://mdio-python.readthedocs.io), [Source](https://github.com/TGSAI/mdio-python).",
+            "url": "https://mdio.dev"
+          },
+          {
+            "name": "modelr.io",
+            "description": "Web app for simple synthetic seismic forward modelling.",
+            "url": "https://github.com/agilescientific/modelr"
+          },
+          {
+            "name": "OpendTect-Plugins",
+            "description": "Open source plugins for the OpendTect seismic interpretation platform. See [the docs](http://waynegm.github.io/OpendTect-Plugin-Docs) for more information.",
+            "url": "https://github.com/waynegm/OpendTect-Plugins"
+          },
+          {
+            "name": "OpenSeaSeis",
+            "description": "Seismic workflow generator and seismic viewer.",
+            "url": "https://github.com/JohnWStockwellJr/OpenSeaSeis"
+          },
+          {
+            "name": "ObsPy",
+            "description": "A comprehensive Python library for seismology, perfect for waveform analysis, data handling, and visualization.",
+            "url": "https://github.com/obspy/obspy"
+          },
+          {
+            "name": "Pastas",
+            "description": "Open-source Python framework for the analysis of groundwater time series.",
+            "url": "https://github.com/pastas/pastas"
+          },
+          {
+            "name": "PyFWI",
+            "description": "It can be used to perform full-waveform inversion (FWI) and time-lapse FWI of seismic data.",
+            "url": "https://pyfwi.readthedocs.io/en/latest"
+          },
+          {
+            "name": "pyGeoPressure",
+            "description": "Pore pressure prediction using well log data and seismic velocity data.",
+            "url": "https://pygeopressure.readthedocs.io/en/latest"
+          },
+          {
+            "name": "PyGIMLi",
+            "description": "A library for geophysical inversion and modeling with an emphasis on ease of use.",
+            "url": "https://www.pygimli.org/"
+          },
+          {
+            "name": "PyLops",
+            "description": "Linear Operators with some geophysics/seismic modules (e.g., pre- and post-stack AVO inversion, deconvolution, Marchenko redatuming, Radon filtering).",
+            "url": "https://pylops.readthedocs.io/en/latest"
+          },
+          {
+            "name": "Pyrocko",
+            "description": "A toolkit for seismic waveform analysis and earthquake modeling.",
+            "url": "https://pyrocko.org/"
+          },
+          {
+            "name": "PySIT",
+            "description": "A Toolbox for seismic inversion and seismic imaging.",
+            "url": "http://pysit.org"
+          },
+          {
+            "name": "pyVDS",
+            "description": "Convenience wrapper around Bluware's OpenVDS+ Python bindings which enables reading of VDS files with a syntax familiar to users of segyio.",
+            "url": "https://github.com/equinor/pyvds"
+          },
+          {
+            "name": "pyZGY",
+            "description": "Convenience wrapper around Schlumberger's OpenZGY Python package which enables reading of ZGY files with a syntax familiar to users of segyio.",
+            "url": "https://github.com/equinor/pyzgy"
+          },
+          {
+            "name": "R2",
+            "description": "A forward/inverse solution for 3D or 2D current flow in quadrilateral or triangular meshes.",
+            "url": "http://www.es.lancs.ac.uk/people/amb/Freeware/R2/R2.htm"
+          },
+          {
+            "name": "RAGU",
+            "description": "Radar interpretation GUI compatible with multiple radar datasets.",
+            "url": "https://github.com/btobers/RAGU"
+          },
+          {
+            "name": "readgssi",
+            "description": "Fast command line or console-based visualization, filtering, and translation of GSSI radar data.",
+            "url": "https://github.com/iannesbitt/readgssi"
+          },
+          {
+            "name": "RedPy",
+            "description": "Auto-clustering for seismic events.",
+            "url": "https://github.com/ahotovec/REDPy"
+          },
+          {
+            "name": "RECAST",
+            "description": "Flexible and Scalable Earthquake Forecasting.",
+            "url": "https://github.com/keliankaz/recast"
+          },
+          {
+            "name": "RGPR",
+            "description": "Reads, exports, processes, and plots ground-penetrating radar data.",
+            "url": "https://github.com/emanuelhuber/RGPR"
+          },
+          {
+            "name": "ResIPy",
+            "description": "A Python wrapper around the R2 family of codes (for 2D/3D DC/IP inversion).",
+            "url": "https://gitlab.com/hkex/resipy"
+          },
+          {
+            "name": "rsudp",
+            "description": "Continuous ObsPy-based visual display, sudden motion monitoring, and historical replay of Raspberry Shake data.",
+            "url": "https://github.com/raspishake/rsudp"
+          },
+          {
+            "name": "SAC (Seismic Analysis Code)",
+            "description": "A go-to tool for seismic waveform analysis, offering powerful data manipulation for seismologists worldwide.",
+            "url": "https://ds.iris.edu/ds/nodes/dmc/software/downloads/sac/"
+          },
+          {
+            "name": "SeisComp",
+            "description": "Seismic observatory automation toolkit. Autodetection, storage, sharing, processing data and more.",
+            "url": "https://github.com/SeisComP/seiscomp"
+          },
+          {
+            "name": "SeisUnix",
+            "description": "A classic suite for seismic reflection data processing, widely used in both academia and industry.",
+            "url": "https://github.com/JohnWStockwellJr/SeisUnix"
+          },
+          {
+            "name": "Segyio",
+            "description": "Fast library for seismic SEGY files.",
+            "url": "https://github.com/equinor/segyio"
+          },
+          {
+            "name": "Seismic Un*x",
+            "description": "A powerful toolkit for seismic data processing.",
+            "url": "https://wiki.seismic-unix.org/start"
+          },
+          {
+            "name": "SeismicZFP",
+            "description": "Convert SEG-Y/ZGY files to compressed [SGZ files](https://github.com/equinor/seismic-zfp/blob/master/docs/file-specification.md) & retrieve arbitrary sub-volumes from these, fast.",
+            "url": "https://github.com/equinor/seismic-zfp"
+          },
+          {
+            "name": "synthoseis",
+            "description": "Synthoseis is an open-source, Python-based tool used for generating pseudo-random seismic data.",
+            "url": "https://github.com/sede-open/synthoseis"
+          },
+          {
+            "name": "swprocess",
+            "description": "A Python package for surface wave processing.",
+            "url": "https://github.com/jpvantassel/swprocess"
+          },
+          {
+            "name": "Surfer",
+            "description": "A contouring and 3D mapping software, great for visualizing subsurface geophysical data.",
+            "url": "https://www.goldensoftware.com/products/surfer/"
+          },
+          {
+            "name": "XTgeo",
+            "description": "Python library with C backend to support manipulation of (oil industry) subsurface reservoir modelling.",
+            "url": "https://xtgeo.readthedocs.io/en/latest"
+          }
+        ]
+      },
+      {
+        "name": "Datasets and Databases",
+        "description": "Access raw and processed geophysical data from reputable sources:",
+        "resources": [
+          {
+            "name": "IRIS Data Management Center",
+            "description": "A comprehensive repository of seismic data from global networks, crucial for earthquake and tectonics studies.",
+            "url": "https://ds.iris.edu/ds/nodes/dmc/"
+          },
+          {
+            "name": "USGS Earthquake Hazards Program",
+            "description": "Provides real-time and historical earthquake data along with hazard maps for seismic research.",
+            "url": "https://earthquake.usgs.gov/"
+          },
+          {
+            "name": "NGDC (National Geophysical Data Center)",
+            "description": "A vast archive of geophysical data—think marine gravity, terrestrial magnetics, and bathymetry. Now part of NOAA's NCEI.",
+            "url": "https://www.ngdc.noaa.gov/"
+          },
+          {
+            "name": "NOAA National Centers for Environmental Information (NCEI)",
+            "description": "A goldmine of geomagnetic, gravity, and climate data—ideal for interdisciplinary geophysical studies.",
+            "url": "https://www.ncei.noaa.gov/"
+          },
+          {
+            "name": "International Seismological Centre (ISC)",
+            "description": "The ultimate catalog of seismic events worldwide, with detailed phase data for researchers.",
+            "url": "https://www.isc.ac.uk/"
+          },
+          {
+            "name": "Global Seismographic Network (GSN)",
+            "description": "High-quality seismic recordings for deep Earth studies.",
+            "url": "https://www.iris.edu/hq/programs/gsn"
+          },
+          {
+            "name": "Poseidon NW Australia",
+            "description": "Interpreted 3D seismic (32bit) including reports and well logs.",
+            "url": "https://drive.google.com/drive/folders/0B7brcf-eGK8Cbk9ueHA0QUU4Zjg"
+          },
+          {
+            "name": "SEG Open Data Catalog",
+            "description": "Catalog of \"geophysical data that is readily available for download from the internet, via mail, or through special request\", maintained by the Society of Exploration Geophysicists.",
+            "url": "https://wiki.seg.org/wiki/Open_data"
+          },
+          {
+            "name": "GeoMapApp",
+            "description": "GeoMapApp is a map-based application for browsing, visualizing and analyzing a diverse suite of curated global and regional geoscience data sets.",
+            "url": "https://www.geomapapp.org/data_set_news.html"
+          },
+          {
+            "name": "Quantarctica",
+            "description": "The Quantarctica data package comprises Antarctic geographic data from data centres worldwide – all wrapped in a project file that works on QGIS.",
+            "url": "https://www.npolar.no/quantarctica/#toggle-id-2-closed"
+          },
+          {
+            "name": "TerraNubis",
+            "description": "TerraNubis is a cloud-based portal for buying, selling and interpreting seismic data sets and interpretations.",
+            "url": "https://terranubis.com/datalist/free"
+          },
+          {
+            "name": "ICGEM",
+            "description": "Hosts gravity field spherical harmonic models and provides a webservice for generating grids of gravity functionals (geoid, gravity anomaly, vertical derivatives, etc).",
+            "url": "http://icgem.gfz-potsdam.de/home"
+          }
+        ]
+      },
+      {
+        "name": "Educational Resources",
+        "description": "Build and refine your geophysics knowledge with these top-tier learning materials:",
+        "subcategories": [
+          {
+            "name": "Textbooks",
+            "description": "Comprehensive learning materials covering various aspects of geophysics:",
+            "subcategories": [
+              {
+                "name": "Fundamentals of Seismology and Earth Structure",
+                "description": "Essential reading for understanding seismic wave theory and earthquake science:",
+                "resources": [
+                  {
+                    "name": "Introduction to Seismology by Peter Shearer",
+                    "description": "A comprehensive guide to seismic wave theory and earthquake science, ideal for students and professionals seeking a solid foundation in seismology.",
+                    "url": "https://www.cambridge.org/highereducation/books/introduction-to-seismology/C1471C1B553C05997E2BC7EB26D4C26D#overview"
+                  },
+                  {
+                    "name": "Quantitative Seismology by Keiiti Aki and Paul G. Richards",
+                    "description": "A rigorous and mathematical treatment of seismology, covering wave propagation, earthquake source mechanisms, and data interpretation.",
+                    "url": "https://www.amazon.com/Quantitative-Seismology-Keiiti-Aki/dp/0935702962"
+                  },
+                  {
+                    "name": "Theoretical Global Seismology by F.A. Dahlen and Jeroen Tromp",
+                    "description": "A rigorous treatment of global seismology, wave propagation, and normal mode theory.",
+                    "url": "https://press.princeton.edu/books/paperback/9780691001241/theoretical-global-seismology"
+                  },
+                  {
+                    "name": "The Seismic Analysis Code: A Primer and User's Guide by George Helffrich, Ian Bastow and James Wookey",
+                    "description": "A practical guide to using the SAC software for seismic data processing, widely used in academic and industry research.",
+                    "url": "https://www.cambridge.org/core/books/seismic-analysis-code/B6841DCB6C7AE43DFD6D7A338D4141FD"
+                  },
+                  {
+                    "name": "Fundamentals of Geophysics by William Lowrie",
+                    "description": "A well-structured introduction to the principles of geophysics, with clear explanations of gravity, magnetism, and seismology.",
+                    "url": "https://www.cambridge.org/highereducation/books/fundamentals-of-geophysics/B6345BD682B6586F75EC40CB84A18EB1#overview"
+                  },
+                  {
+                    "name": "Modern Global Seismology by Thorne Lay and Terry C. Wallace",
+                    "description": "Explains the principles of seismology at a global scale, including earthquake dynamics and deep Earth structure.",
+                    "url": "https://www.elsevier.com/books/modern-global-seismology/lay/978-0-12-732870-6"
+                  }
+                ]
+              },
+              {
+                "name": "Geodynamics and Earth's Interior",
+                "description": "Exploration of Earth's tectonic processes and deep structure:",
+                "resources": [
+                  {
+                    "name": "Geodynamics by Donald Turcotte and Gerald Schubert",
+                    "description": "An in-depth exploration of Earth's tectonic processes, mantle convection, and planetary evolution.",
+                    "url": "https://www.cambridge.org/highereducation/books/geodynamics/E0E847DA9FE68BDB90C2E457791F0C98#overview"
+                  },
+                  {
+                    "name": "The Solid Earth by C.M.R. Fowler",
+                    "description": "A broad geophysics textbook covering seismology, gravity, geomagnetism, and heat flow.",
+                    "url": "https://www.cambridge.org/highereducation/books/the-solid-earth/0A66AC49BB6105F54AACF52D3C3121A4"
+                  },
+                  {
+                    "name": "Earth Structure: An Introduction to Structural Geology and Tectonics by Ben A. van der Pluijm and Stephen Marshak",
+                    "description": "Explores the deformation of Earth's crust and lithosphere, combining geophysics and geology.",
+                    "url": "https://www.amazon.com/Earth-Structure-Introduction-Structural-Tectonics/dp/039392467X"
+                  }
+                ]
+              },
+              {
+                "name": "Exploration Geophysics",
+                "description": "Resources for applied geophysics in exploration and industry:",
+                "resources": [
+                  {
+                    "name": "Exploration Seismology by Sheriff and Geldart",
+                    "description": "The bible of seismic exploration—perfect for applied geophysicists in the oil, gas, and mineral industries.",
+                    "url": "https://www.cambridge.org/core/books/exploration-seismology/CC00727A219943E62F6FF01426DBA9D2"
+                  },
+                  {
+                    "name": "Applied Geophysics by W. M. Telford, L. P. Geldart, and R. E. Sheriff",
+                    "description": "Covers all major geophysical methods, including gravity, magnetics, electrical resistivity, and seismic exploration.",
+                    "url": "https://www.cambridge.org/highereducation/books/applied-geophysics/44E5A30D0C486A109ED2259E9BB6FDFE#overview"
+                  },
+                  {
+                    "name": "Fundamentals of Geophysical Data Processing by Jon F. Claerbout",
+                    "description": "A classic text on digital signal processing techniques in seismic imaging.",
+                    "url": "https://www.amazon.com/Fundamentals-Geophysical-Data-Processing-Applications/dp/0935702873"
+                  },
+                  {
+                    "name": "Gravity and Magnetic Exploration: Principles, Practices, and Applications by William J. Hinze, Ralph R. B. von Frese, and Afif H. Saad",
+                    "description": "An essential resource for understanding potential field geophysics in mineral and hydrocarbon exploration.",
+                    "url": "https://www.cambridge.org/highereducation/books/gravity-and-magnetic-exploration/45D1D0D99A67300D5168C5A23AB848E2#overview"
+                  },
+                  {
+                    "name": "Principles of Geophysical Exploration by D.S. Parasnis",
+                    "description": "A solid introduction to geophysical exploration methods, with an emphasis on data interpretation.",
+                    "url": "https://www.geokniga.org/bookfiles/geokniga-principles-applied-geophysics.pdf"
+                  }
+                ]
+              },
+              {
+                "name": "Mathematical and Computational Geophysics",
+                "description": "Advanced mathematical and computational techniques for geophysical analysis:",
+                "resources": [
+                  {
+                    "name": "Inverse Problem Theory and Methods for Model Parameter Estimation by Albert Tarantola",
+                    "description": "A must-read for geophysicists working with inverse modeling, parameter estimation, and uncertainty analysis.",
+                    "url": "https://www.siam.org/Publications/Books/CS06"
+                  },
+                  {
+                    "name": "Geophysical Data Analysis: Discrete Inverse Theory by William Menke",
+                    "description": "Covers mathematical techniques for solving inverse problems in geophysics.",
+                    "url": "https://www.elsevier.com/books/geophysical-data-analysis/menke/978-0-12-397160-9"
+                  },
+                  {
+                    "name": "Numerical Methods of Exploration Seismology by Gary F. Margrave",
+                    "description": "A concise look at applying machine learning to seismic interpretation, geophysical inversion, and subsurface exploration using advanced numerical methods.",
+                    "url": "https://www.cambridge.org/core/books/numerical-methods-of-exploration-seismology/53A21CAD45D4047D117191E6BF4408E2"
+                  },
+                  {
+                    "name": "Computational Seismology: A Practical Introduction by Heiner Igel",
+                    "description": "Provides a hands-on approach to numerical methods in seismology, including wave equation solvers and finite difference techniques.",
+                    "url": "https://academic.oup.com/book/26503"
+                  },
+                  {
+                    "name": "Global Optimization Methods in Geophysical Inversion by Mrinal K. Sen and Paul L. Stoffa",
+                    "description": "Essential for those working on inversion problems in geophysics, with a focus on optimization techniques.",
+                    "url": "https://www.amazon.com/Global-Optimization-Methods-Geophysical-Inversion/dp/1108445845"
+                  }
+                ]
+              },
+              {
+                "name": "Specialized Topics in Geophysics",
+                "description": "Focused resources on specific geophysical sub-disciplines:",
+                "resources": [
+                  {
+                    "name": "Seismic Tomography: Theory and Practice by H.M. Iyer and K. Hirahara",
+                    "description": "A foundational book on seismic tomography methods used to image Earth's interior.",
+                    "url": "https://www.amazon.com/Seismic-Tomography-Theory-H-M-Iyer/dp/041244230X"
+                  },
+                  {
+                    "name": "Plate Tectonics: A Very Short Introduction by Peter Molnar",
+                    "description": "A concise introduction to the principles of plate tectonics and its geophysical implications.",
+                    "url": "https://global.oup.com/academic/product/plate-tectonics-a-very-short-introduction-9780198728269"
+                  },
+                  {
+                    "name": "Electromagnetic Methods in Applied Geophysics by Misac N. Nabighian",
+                    "description": "A definitive reference on electromagnetic techniques for subsurface imaging and mineral exploration.",
+                    "url": "https://www.amazon.com/Electromagnetic-Methods-Applied-Geophysics-Investigations/dp/1560800532"
+                  },
+                  {
+                    "name": "An Introduction to Applied and Environmental Geophysics by John M. Reynolds",
+                    "description": "Focuses on the use of geophysical methods in environmental and engineering applications.",
+                    "url": "https://www.geokniga.org/bookfiles/geokniga-introduction-applied-and-environmental-geophysics_1.pdf"
+                  },
+                  {
+                    "name": "Geomagnetism by Masaru Kono",
+                    "description": "Covers the physics of the Earth's magnetic field, paleomagnetism, and dynamo theory.",
+                    "url": "https://www.nhbs.com/geomagnetism-treatise-on-geophysics-book"
+                  },
+                  {
+                    "name": "Gravity and Magnetic Exploration, Principles, Practices, and Applications by William J. Hinze, Ralph R. B. von Frese and Afif H. Saad",
+                    "description": "A succinct overview of gravity and magnetic exploration, covering core principles, practical techniques, and their applications in geophysical studies.",
+                    "url": "https://www.cambridge.org/de/universitypress/subjects/earth-and-environmental-science/solid-earth-geophysics/gravity-and-magnetic-exploration-principles-practices-and-applications?format=HB&isbn=9780521871013"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Online Courses and Tutorials",
+            "description": "Expand your knowledge with these online courses and tutorials:",
+            "resources": []
+          },
+          {
+            "name": "Workshops and Webinars",
+            "description": "Interactive learning opportunities from leading institutions:",
+            "resources": [
+              {
+                "name": "Annual Seismology Skill Building Workshop for Undergraduates",
+                "description": "Organized by Miami University and EarthScope Consortium.",
+                "url": "https://www.earthscope.org/"
+              }
+            ]
+          },
+          {
+            "name": "University Programs and Certificates",
+            "description": "Explore graduate programs, summer schools, and certificate courses in geosciences for deeper academic training.",
+            "resources": []
+          }
+        ]
+      },
+      {
+        "name": "Research Papers and Journals",
+        "description": "Keep abreast of the latest discoveries and methods in geophysics:",
+        "resources": [
+          {
+            "name": "Geophysical Research Letters",
+            "description": "Rapid publications presenting high-impact research across various geophysical fields.",
+            "url": "https://agupubs.onlinelibrary.wiley.com/journal/19448007"
+          },
+          {
+            "name": "Geophysics",
+            "description": "The leading journal for applied geophysics and exploration techniques.",
+            "url": "https://library.seg.org/journal/gpysa7"
+          },
+          {
+            "name": "EarthArXiv",
+            "description": "A preprint server for cutting-edge geophysical research prior to formal publication.",
+            "url": "https://eartharxiv.org/"
+          }
+        ]
+      },
+      {
+        "name": "Tutorials and Cheat Sheets",
+        "resources": [
+          {
+            "name": "Geophysics Cheat Sheet",
+            "description": "Cheat Sheet for Geophysics.",
+            "url": "https://static.squarespace.com/static/549dcda5e4b0a47d0ae1db1e/54a06d6ee4b0d158ed95f696/54a06d70e4b0d158ed9603f5/1350658645407/Cheatsheet_geophysics.pdf"
+          },
+          {
+            "name": "Rock Physics Cheat Sheet",
+            "description": "Cheat Sheet for Rock Physics.",
+            "url": "https://static.squarespace.com/static/549dcda5e4b0a47d0ae1db1e/54a06d6ee4b0d158ed95f696/54a06d6fe4b0d158ed960042/1374593568367/Cheatsheet_Rock_Physics.pdf"
+          },
+          {
+            "name": "Petroleum Science Cheat Sheet",
+            "description": "Cheat Sheet for Petroleum Science.",
+            "url": "https://static.squarespace.com/static/549dcda5e4b0a47d0ae1db1e/54a06d6ee4b0d158ed95f696/54a06d6fe4b0d158ed96019e/1323808738753/Cheatsheet_petroleum.pdf"
+          }
+        ]
+      },
+      {
+        "name": "Organizations and Societies",
+        "description": "Network with leading experts, researchers, and industry professionals in geophysics through these key organizations:",
+        "subcategories": [
+          {
+            "name": "Global Organizations",
+            "description": "International organizations supporting geophysical research and collaboration:",
+            "resources": [
+              {
+                "name": "American Geophysical Union (AGU)",
+                "description": "A hub for geoscientists offering resources, events, and professional networking across disciplines.",
+                "url": "https://www.agu.org/"
+              },
+              {
+                "name": "Society of Exploration Geophysicists (SEG)",
+                "description": "Focused on applied geophysics, providing conferences, training, and publications.",
+                "url": "https://seg.org/"
+              },
+              {
+                "name": "Seismological Society of America (SSA)",
+                "description": "Specializing in earthquake science and research with valuable educational resources.",
+                "url": "https://www.seismosoc.org/"
+              },
+              {
+                "name": "European Association of Geoscientists and Engineers (EAGE)",
+                "description": "Offers training, research, and networking opportunities for geoscience professionals.",
+                "url": "https://www.eage.org/"
+              },
+              {
+                "name": "International Association of Geodesy (IAG)",
+                "description": "Covers geophysical research related to Earth's gravity, rotation, and deformation.",
+                "url": "https://iag-aig.org/"
+              },
+              {
+                "name": "International Association of Seismology and Physics of the Earth's Interior (IASPEI)",
+                "description": "Advances global seismology and deep Earth studies.",
+                "url": "https://iaspei.org/"
+              },
+              {
+                "name": "International Union of Geodesy and Geophysics (IUGG)",
+                "description": "A collective body supporting geophysical research worldwide.",
+                "url": "https://www.iugg.org/"
+              }
+            ]
+          },
+          {
+            "name": "Regional and National Societies",
+            "description": "Regional organizations supporting geophysical research and professionals:",
+            "resources": [
+              {
+                "name": "National Institute of Geological Sciences (NIGS)",
+                "description": "Based in the Philippines, dedicated to geophysical and geological research and education.",
+                "url": "http://nigs.science.upd.edu.ph/"
+              },
+              {
+                "name": "National Iranian Geophysics Society (NIGS)",
+                "description": "Nonprofit organization for geophysicists and engineers. It is an organization providing a national network of geoscientists and academic professionals.",
+                "url": "https://nigs.ir/en/home-en/about-nigs-en/"
+              },
+              {
+                "name": "Australian Society of Exploration Geophysicists (ASEG)",
+                "description": "A professional body for geophysicists working in exploration and mining.",
+                "url": "https://www.aseg.org.au/"
+              },
+              {
+                "name": "Canadian Society of Exploration Geophysicists (CSEG)",
+                "description": "Provides networking, education, and professional development for geophysicists in Canada.",
+                "url": "https://cseg.ca/"
+              },
+              {
+                "name": "Geological Society of London (GSL)",
+                "description": "One of the world's oldest geological societies, supporting geophysics research.",
+                "url": "https://www.geolsoc.org.uk/"
+              },
+              {
+                "name": "Indian Geophysical Union (IGU)",
+                "description": "Focuses on geophysical research in seismology, hydrology, and geodynamics.",
+                "url": "https://iguonline.in/"
+              },
+              {
+                "name": "Brazilian Geophysical Society (SBGf)",
+                "description": "Organizes geophysics-related events, research, and publications in South America.",
+                "url": "https://sbgf.org.br/"
+              },
+              {
+                "name": "Russian Geophysical Society (RGS)",
+                "description": "A key organization for seismic and electromagnetic research in Russia.",
+                "url": "https://www.gsras.ru/"
+              },
+              {
+                "name": "Chinese Geophysical Society (CGS)",
+                "description": "Promotes geophysical advancements and collaboration in China.",
+                "url": "http://www.geophys.cn/"
+              }
+            ]
+          },
+          {
+            "name": "Professional Networks and Communities",
+            "description": "Online platforms and communities for geophysics professionals:",
+            "resources": [
+              {
+                "name": "LinkedIn Groups",
+                "description": "Join geophysics-related groups on LinkedIn to network and share knowledge.",
+                "url": "https://www.linkedin.com/groups/"
+              },
+              {
+                "name": "ResearchGate",
+                "description": "Connect with researchers, share publications, and collaborate on geophysical projects.",
+                "url": "https://www.researchgate.net/"
+              },
+              {
+                "name": "Academic Mailing Lists",
+                "description": "Join geophysics-focused lists like IRIS Seismology, SEG’s Technical Sections, and EAGE’s Discussion Groups.",
+                "url": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Conferences and Events",
+        "description": "Stay connected with the latest advancements through these key events:",
+        "resources": [
+          {
+            "name": "AGU Fall Meeting",
+            "description": "The world's largest geoscience conference featuring hundreds of sessions, workshops, and networking opportunities.",
+            "url": "https://www.agu.org/fall-meeting"
+          },
+          {
+            "name": "SEG Annual Meeting",
+            "description": "A premier event showcasing the latest in exploration geophysics, technology innovations, and research.",
+            "url": "https://seg.org/Events/Annual-Meeting"
+          },
+          {
+            "name": "SSA Annual Meeting",
+            "description": "Focused on earthquake science and the latest seismological research.",
+            "url": "https://www.seismosoc.org/meetings/"
+          },
+          {
+            "name": "European Geosciences Union General Assembly",
+            "description": "A massive European event covering all things Earth and planetary science.",
+            "url": "https://www.egu.eu/meetings/general-assembly/"
+          }
+        ]
+      },
+      {
+        "name": "Blogs, Podcasts, and Community Forums",
+        "description": "Engage with the geophysics community through diverse media channels:",
+        "subcategories": [
+          {
+            "name": "Blogs",
+            "description": "Regularly updated blogs covering geophysical topics and research:",
+            "resources": [
+              {
+                "name": "AGU Blogosphere",
+                "description": "Hosted by the American Geophysical Union, this platform offers a diverse collection of blogs discussing the latest developments in geoscience and geophysics.",
+                "url": "https://blogs.agu.org/"
+              },
+              {
+                "name": "Geophysics Rocks",
+                "description": "An engaging blog that breaks down complex geophysical concepts in an accessible way.",
+                "url": "https://geophysicsrocks.com/"
+              },
+              {
+                "name": "Geophysical Insights Blog",
+                "description": "Features articles on machine learning applications in geophysical data analysis and other contemporary topics.",
+                "url": "https://www.geoinsights.com/blog/"
+              },
+              {
+                "name": "Geology & Geophysics Blog – University of Southampton",
+                "description": "Provides insights into recent research, fieldwork, and developments in geology and geophysics.",
+                "url": "https://blog.soton.ac.uk/ggblog/"
+              },
+              {
+                "name": "Geophysics Blog – University of Texas Institute for Geophysics",
+                "description": "Shares updates on research projects, field studies, and scientific findings in geophysics.",
+                "url": "https://ig.utexas.edu/category/news/geophysics-blog/"
+              },
+              {
+                "name": "20 Best Geophysics Blogs and Websites",
+                "description": "A curated list of top geophysics blogs, providing a broad spectrum of perspectives and topics in the field.",
+                "url": "https://science.feedspot.com/geophysics_blogs/"
+              }
+            ]
+          },
+          {
+            "name": "Technical Blogs",
+            "description": "Technical resources and advanced geophysical discussions:",
+            "resources": [
+              {
+                "name": "Fundamentals of Geophysical Data Processing - Stanford Exploration Project",
+                "description": "Offers comprehensive insights into geophysical data processing techniques.",
+                "url": "https://sep.sites.stanford.edu/fundamentals-geophysical-data-processing"
+              },
+              {
+                "name": "Machine Learning Applications to Geophysical Data Analysis - UBC",
+                "description": "Explores the integration of machine learning in geophysical data analysis.",
+                "url": "https://www.slim.eos.ubc.ca/content/machine-learning-applications-geophysical-data-analysis"
+              },
+              {
+                "name": "Data-Driven Geophysics: From Dictionary Learning to Deep Learning",
+                "description": "A scholarly article discussing the evolution of data-driven approaches in geophysics.",
+                "url": "https://arxiv.org/abs/2007.06183"
+              },
+              {
+                "name": "Deep Learning for Geophysics: Current and Future Trends",
+                "description": "Reviews the application of deep learning techniques in geophysical research.",
+                "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021RG000742"
+              },
+              {
+                "name": "Subsurface Mapping by Ambient Noise Tomography",
+                "description": "Provides an overview of ambient noise tomography techniques used in subsurface mapping.",
+                "url": "https://en.wikipedia.org/wiki/Subsurface_mapping_by_ambient_noise_tomography"
+              }
+            ]
+          },
+          {
+            "name": "Podcasts",
+            "description": "Audio content featuring geophysical discussions and interviews:",
+            "resources": [
+              {
+                "name": "Seismic Soundoff",
+                "description": "Hosted by the Society of Exploration Geophysicists (SEG), this podcast offers in-depth conversations on applied geophysics, addressing challenges in energy, water, and climate.",
+                "url": "https://seg.org/podcast"
+              },
+              {
+                "name": "Third Pod from the Sun",
+                "description": "Presented by the American Geophysical Union, this podcast delves into the stories behind the science, offering insights into various geoscience topics.",
+                "url": "https://www.agu.org/Share-and-Advocate/Share/Third-Pod-from-the-Sun"
+              },
+              {
+                "name": "Sci & Tell",
+                "description": "Another offering from the American Geophysical Union, this podcast features interviews and first-person stories from scientists, providing a personal perspective on scientific endeavors.",
+                "url": "https://www.agu.org/Share-and-Advocate/Share/Sci-and-Tell"
+              },
+              {
+                "name": "Oxford University Geophysics Podcasts",
+                "description": "The University of Oxford provides a series of podcasts featuring discussions on various geophysics topics, including carbon storage and mathematical aspects of the planet.",
+                "url": "https://www.earth.ox.ac.uk/research/research-groups/seismology/seismology-podcasts/"
+              }
+            ]
+          },
+          {
+            "name": "Community Forums and Social Media",
+            "description": "Platforms for discussion and networking in geophysics:",
+            "resources": [
+              {
+                "name": "Society of Exploration Geophysicists (SEG) Online Communities",
+                "description": "SEG offers various online platforms, including forums and social media groups, where professionals can discuss topics related to exploration geophysics.",
+                "url": "https://seg.org/About-SEG/Communities"
+              },
+              {
+                "name": "Reddit Communities",
+                "description": "Subreddits like r/geophysics and r/geology provide platforms for discussions, Q&A, and sharing the latest research and news in the field.",
+                "url": "https://www.reddit.com/r/geophysics/"
+              },
+              {
+                "name": "LinkedIn Groups",
+                "description": "Professional groups such as \"Geophysics Forum\" and \"Exploration Geophysics\" on LinkedIn offer opportunities to connect with industry experts, participate in discussions, and stay updated on industry trends.",
+                "url": "https://www.linkedin.com/groups/122504/"
+              },
+              {
+                "name": "Geophysics Forums",
+                "description": "Dedicated forums like the Geophysics Forum provide spaces to ask questions, share knowledge, and engage in discussions specific to geophysics.",
+                "url": "https://able2know.org/forum/geophysics/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Career and Professional Development",
+        "description": "Advance your geophysical career with these resources:",
+        "resources": [
+          {
+            "name": "AGU Career Center",
+            "description": "Job listings, career advice, and networking opportunities tailored for geoscientists.",
+            "url": "https://careers.agu.org/"
+          },
+          {
+            "name": "SEG Career Resources",
+            "description": "Tools for professional development including mentoring programs, workshops, and job postings.",
+            "url": "https://seg.org/Career-Services"
+          }
+        ]
+      },
+      {
+        "name": "Industry News and Updates",
+        "description": "Stay informed with the latest trends, breakthroughs, and market news in geophysics:",
+        "subcategories": [
+          {
+            "name": "Industry Publications",
+            "description": "Publications covering geophysical industry news and developments:",
+            "resources": [
+              {
+                "name": "EAGE's First Break",
+                "description": "Covers applied geoscience topics, case studies, and research developments.",
+                "url": "https://eage.org/en/publications/first-break"
+              },
+              {
+                "name": "SEG News",
+                "description": "Provides updates on geophysical exploration, technology, and society news.",
+                "url": "https://seg.org/News"
+              },
+              {
+                "name": "The Leading Edge (TLE)",
+                "description": "Publishes technical advancements in seismic and geophysical methods.",
+                "url": "https://library.seg.org/journal/tle"
+              },
+              {
+                "name": "Oil & Gas Journal",
+                "description": "Industry-leading coverage on petroleum exploration and energy trends.",
+                "url": "https://www.ogj.com/"
+              }
+            ]
+          },
+          {
+            "name": "Online News Platforms",
+            "description": "Digital platforms for geophysical and energy industry news:",
+            "resources": [
+              {
+                "name": "GeoExPro",
+                "description": "Articles on exploration, geophysics, and energy transition.",
+                "url": "https://www.geoexpro.com"
+              },
+              {
+                "name": "Offshore Engineer",
+                "description": "Insights into offshore geophysics and subsea technologies.",
+                "url": "https://www.oe.digital"
+              },
+              {
+                "name": "World Oil",
+                "description": "Reports on upstream exploration and drilling news.",
+                "url": "https://www.worldoil.com"
+              }
+            ]
+          },
+          {
+            "name": "Market Analysis and Research Reports",
+            "description": "Resources for industry trends and market intelligence:",
+            "resources": [
+              {
+                "name": "S&P Global Energy Research",
+                "description": "Analysis on energy sector investments and seismic data markets.",
+                "url": "https://www.spglobal.com/commodityinsights/en/ci/research-analysis.html"
+              },
+              {
+                "name": "Wood Mackenzie",
+                "description": "Market intelligence for oil, gas, and energy transition.",
+                "url": "https://www.woodmac.com/"
+              },
+              {
+                "name": "Rystad Energy",
+                "description": "Research on geophysical services and industry spending.",
+                "url": "https://www.rystadenergy.com/"
+              }
+            ]
+          },
+          {
+            "name": "Press Releases and Corporate Blogs",
+            "description": "Official announcements and insights from geophysical companies:",
+            "resources": [
+              {
+                "name": "Schlumberger Innovation Blog",
+                "description": "Updates on AI-driven seismic inversion and cloud geoscience.",
+                "url": "https://www.slb.com/resource-library"
+              },
+              {
+                "name": "CGG Newsroom",
+                "description": "Case studies on multi-client seismic projects and carbon storage monitoring.",
+                "url": "https://www.cgg.com/newsroom"
+              },
+              {
+                "name": "TGS Press Releases",
+                "description": "Announcements on new seismic data acquisitions and AI exploration tools.",
+                "url": "https://www.tgs.com/news-and-media/press-releases"
+              },
+              {
+                "name": "ION Geophysical",
+                "description": "Insights into cutting-edge geophysical imaging and seismic data processing.",
+                "url": "https://iongeo.com/News/"
+              }
+            ]
+          },
+          {
+            "name": "Government and Regulatory Updates",
+            "description": "Official resources from government agencies and regulatory bodies:",
+            "resources": [
+              {
+                "name": "United States Geological Survey (USGS)",
+                "description": "Seismic hazard reports and earthquake risk assessments.",
+                "url": "https://www.usgs.gov/"
+              },
+              {
+                "name": "British Geological Survey (BGS)",
+                "description": "Research on subsurface imaging and energy geoscience.",
+                "url": "https://www.bgs.ac.uk/"
+              },
+              {
+                "name": "Geoscience Australia",
+                "description": "Updates on geophysical surveys and mineral exploration projects.",
+                "url": "https://www.ga.gov.au/"
+              }
+            ]
+          },
+          {
+            "name": "Industry Webinars and Live Updates",
+            "description": "Webinars and live updates from geophysical companies and organizations:",
+            "resources": [
+              {
+                "name": "SEG Webinars",
+                "description": "Webinars on various geophysical topics, including seismic data processing, interpretation and  machine learning applications.",
+                "url": "https://seg.org/events_category/webinar/"
+              },
+              {
+                "name": "AAPG Discovery Thinking Series",
+                "description": "A series of webinars focusing on innovative thinking in geoscience and exploration.",
+                "url": "https://www.searchanddiscovery.com/specialcollections/discoverythinking.html"
+              },
+              {
+                "name": "EAGE Conferences",
+                "description": "Events focusing on AI in geoscience and renewable energy applications.",
+                "url": "https://eage.org/events/conferences/"
+              }
+            ]
+          },
+          {
+            "name": "Geophysical Technology Startups",
+            "description": "Innovative companies advancing geophysical technologies:",
+            "resources": [
+              {
+                "name": "SAGA Robotics",
+                "description": "Developing autonomous drones for geophysical surveys.",
+                "url": "https://sagarobotics.com"
+              },
+              {
+                "name": "Seisintel",
+                "description": "AI-based seismic data analytics for offshore exploration.",
+                "url": "https://seisintel.com"
+              },
+              {
+                "name": "Xcalibur Multiphysics",
+                "description": "Advances in airborne geophysical exploration.",
+                "url": "https://xcaliburmp.com"
+              },
+              {
+                "name": "Geophysical Technology, Inc. (GTI)",
+                "description": "Innovative geophysical solutions for subsurface exploration, enhancing seismic operational efficiency and earth imaging quality.",
+                "url": "https://geophysicaltechnology.com"
+              },
+              {
+                "name": "Pixxel",
+                "description": "Developing a constellation of hyperspectral imaging satellites to provide high-resolution Earth observation data across various industries.",
+                "url": "https://pixxel.space"
+              },
+              {
+                "name": "Wheere",
+                "description": "Offers an indoor geolocation system capable of precise positioning even through substantial concrete barriers, utilizing low-frequency wave emission and advanced algorithms.",
+                "url": "https://wheere.com"
+              },
+              {
+                "name": "Quaise Energy",
+                "description": "Aims to harness geothermal energy by drilling deeper into the Earth's crust using gyrotron technology to vaporize rock, accessing \"superhot\" rock for sustainable energy.",
+                "url": "https://quaise.energy"
+              },
+              {
+                "name": "Fervo Energy",
+                "description": "Utilizes advanced drilling techniques to enhance geothermal well outputs, providing renewable energy solutions for high-demand sectors like AI data centers.",
+                "url": "https://fervoenergy.com"
+              },
+              {
+                "name": "Fleet Space Technologies",
+                "description": "Combines low Earth orbit nanosatellites with ground-based sensors and AI to revolutionize minerals exploration, creating detailed 3D subsurface maps.",
+                "url": "https://fleetspace.com"
+              },
+              {
+                "name": "Kapta Space",
+                "description": "Developing electronically steerable radar-based imaging technology for satellites, enabling faster and more precise scanning of large areas for various applications.",
+                "url": "https://kaptaspace.com"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Miscellaneous Resources",
+        "description": "A few additional resources to enhance your geophysical toolkit:",
+        "subcategories": [
+          {
+            "name": "Data Visualization Libraries",
+            "description": "Tools for visualizing geophysical data and results:",
+            "resources": [
+              {
+                "name": "Matplotlib",
+                "description": "Essential for 2D plotting in Python, commonly used in geophysics.",
+                "url": "https://matplotlib.org/"
+              },
+              {
+                "name": "Plotly",
+                "description": "Interactive visualizations ideal for geospatial and geophysical data.",
+                "url": "https://plotly.com/python/"
+              },
+              {
+                "name": "Seaborn",
+                "description": "Statistical data visualization for enhanced analysis.",
+                "url": "https://seaborn.pydata.org/"
+              },
+              {
+                "name": "GMT (Generic Mapping Tools)",
+                "description": "Widely used for creating high-quality geoscientific maps.",
+                "url": "https://www.generic-mapping-tools.org/"
+              },
+              {
+                "name": "ParaView",
+                "description": "Open-source tool for 3D visualization of geophysical datasets.",
+                "url": "https://www.paraview.org/"
+              },
+              {
+                "name": "VisIt",
+                "description": "A high-performance visualization tool for large-scale geophysical simulations—perfect for parallel processing and big data.",
+                "url": "https://visit-dav.github.io/visit-website/"
+              },
+              {
+                "name": "Tecplot",
+                "description": "A premium option for visualizing computational fluid dynamics and geophysical data with stunning, publication-ready graphics.",
+                "url": "https://tecplot.com/"
+              }
+            ]
+          },
+          {
+            "name": "Shell Scripting & Automation (Bash)",
+            "description": "Shell scripting is crucial for automating repetitive geophysical workflows.",
+            "resources": [
+              {
+                "name": "Shell Scripting Basics",
+                "description": "- **Why Use Shell Scripting in Geophysics?**\n  - Automate seismic data processing workflows.\n  - Manage large datasets efficiently.\n  - Run parallel computations on HPC clusters.\n  - Preprocess and clean geophysical datasets before analysis.",
+                "url": ""
+              },
+              {
+                "name": "Key Commands",
+                "description": "- **Key Shell Commands for Geophysicists:**\n  - **`awk` & `sed`** - Process and clean seismic files.\n  - **`grep` & `cut`** - Extract data from logs.\n  - **`xargs` & `parallel`** - Batch processing.\n  - **`ffmpeg`** - Convert geophysical images.\n  - **`rsync` & `scp`** - Transfer large datasets.",
+                "url": ""
+              },
+              {
+                "name": "Example Script",
+                "description": "```bash\n# Rename all .sgy files to include date\nfor file in *.sgy; do\n    mv \"$file\" \"$(date +%Y%m%d)_$file\"\ndone\n```",
+                "url": ""
+              },
+              {
+                "name": "Resources to Learn Shell Scripting for Geophysics",
+                "resources": [
+                  {
+                    "name": "Advanced Bash Scripting Guide",
+                    "description": "Comprehensive reference.",
+                    "url": "https://tldp.org/LDP/abs/html/"
+                  },
+                  {
+                    "name": "Linux Command Line for Geoscientists",
+                    "description": "Practical geospatial workflows.",
+                    "url": "https://earthdatascience.org/"
+                  },
+                  {
+                    "name": "HPC Shell Scripting",
+                    "description": "For handling large geophysical datasets.",
+                    "url": "https://www.nersc.gov/users/data-analytics/data-analysis/"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Programming and Scripting Resources",
+            "description": "Tools and libraries for geophysical programming and analysis:",
+            "resources": [
+              {
+                "name": "ObsPy",
+                "description": "Python library for seismology.",
+                "url": "https://github.com/obspy/obspy"
+              },
+              {
+                "name": "SimPEG",
+                "description": "For geophysical inversions.",
+                "url": "https://simpeg.xyz/"
+              },
+              {
+                "name": "Fatiando a Terra",
+                "description": "For gravity & magnetics modeling.",
+                "url": "https://www.fatiando.org/"
+              }
+            ]
+          },
+          {
+            "name": "Technical Blogs and Code Tutorials",
+            "description": "Educational resources for geophysical programming and techniques:",
+            "resources": [
+              {
+                "name": "Towards Data Science",
+                "description": "Covers geospatial data science and ML in geosciences.",
+                "url": "https://towardsdatascience.com/"
+              },
+              {
+                "name": "Software Underground",
+                "description": "Community for geoscience programming.",
+                "url": "https://softwareunderground.org/"
+              },
+              {
+                "name": "Geophysics Rocks",
+                "description": "Tutorials on seismic interpretation.",
+                "url": "https://geophysicsrocks.com/"
+              }
+            ]
+          },
+          {
+            "name": "Professional Books and eBooks",
+            "description": "Specialized books for geophysical professionals:",
+            "resources": [
+              {
+                "name": "Seismic Data Analysis - Yilmaz",
+                "description": "Guide for seismic processing and interpretation.",
+                "url": "https://library.seg.org/doi/book/10.1190/1.9781560801580"
+              },
+              {
+                "name": "Theoretical & Computational Seismology - Tromp",
+                "description": "Advanced computational concepts.",
+                "url": "https://tromp.princeton.edu/publications"
+              }
+            ]
+          },
+          {
+            "name": "Software Development Tools",
+            "description": "Tools for developing geophysical software and workflows:",
+            "resources": [
+              {
+                "name": "Git & GitHub",
+                "description": "Version control for geophysical code.",
+                "url": "https://github.com/"
+              },
+              {
+                "name": "Jupyter Notebook",
+                "description": "Interactive tutorials and visualization.",
+                "url": "https://jupyter.org/"
+              },
+              {
+                "name": "Docker",
+                "description": "Containerized environments for reproducibility.",
+                "url": "https://www.docker.com/"
+              },
+              {
+                "name": "Google Earth Engine",
+                "description": "Cloud-based analysis of geospatial and remote sensing data.",
+                "url": "https://earthengine.google.com/"
+              },
+              {
+                "name": "Quantum Geographic Information System (QGIS)",
+                "description": "A free, open-source software that allows users to create, edit, visualize, analyze, and publish geospatial information.",
+                "url": "https://qgis.org/"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

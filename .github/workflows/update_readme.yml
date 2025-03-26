@@ -1,0 +1,46 @@
+name: Update README from JSON
+
+on:
+  push:
+    paths:
+      - "awesome_geophysics.json"
+  workflow_dispatch: # Allows manual triggering
+  schedule:
+    - cron: "0 0 * * 0" # Runs at 00:00 UTC every Sunday
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Needed for the git diff step
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Generate README
+        run: |
+          python generate_readme.py
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --quiet README.md || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m "Auto-update README from JSON [skip ci]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
