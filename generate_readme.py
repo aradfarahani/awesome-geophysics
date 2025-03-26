@@ -73,11 +73,11 @@ def generate_toc(categories, indent=0):
     return toc
 
 def generate_markdown_from_json(json_file, output_file):
-    """Generate a KREADME.md file from the JSON data.
+    """Generate a README.md file from the JSON data.
 
     Args:
         json_file (str): Path to the input JSON file (e.g., 'awesome_geophysics.json').
-        output_file (str): Path to the output Markdown file (e.g., 'KREADME.md').
+        output_file (str): Path to the output Markdown file (e.g., 'README.md').
     """
     # Load JSON data
     with open(json_file, 'r', encoding='utf-8') as f:
@@ -214,4 +214,4 @@ def generate_markdown_from_json(json_file, output_file):
         f.write('\n'.join(md_content))
 
 if __name__ == '__main__':
-    generate_markdown_from_json('awesome_geophysics.json', 'KREADME.md')
+    generate_markdown_from_json('awesome_geophysics.json', 'README.md')
