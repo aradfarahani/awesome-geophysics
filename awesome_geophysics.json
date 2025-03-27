@@ -227,6 +227,11 @@
             "url": "https://github.com/SeisComP/seiscomp"
           },
           {
+            "name": "Seismic_BPMF",
+            "description": "Complete framework for earthquake detection and location: Backprojection and matched-filtering (BPMF), with methods for automatic picking, relocation and efficient waveform stacking.",
+            "url": "https://github.com/ebeauce/Seismic_BPMF"
+          },
+          {
             "name": "SeisUnix",
             "description": "A classic suite for seismic reflection data processing, widely used in both academia and industry.",
             "url": "https://github.com/JohnWStockwellJr/SeisUnix"
