@@ -12,6 +12,11 @@
         "description": "Enhance your geophysical workflows with these essential software solutions:",
         "resources": [
           {
+            "name": "EQcorrscan",
+            "description": "A python package for the detection and analysis of repeating and near-repeating earthquakes.",
+            "url": "https://github.com/eqcorrscan/EQcorrscan"
+          },
+          {
             "name": "Auralib",
             "description": "Python package to support investigation of geoscience problems including geophysics, rock physics, petrophysics, and data read/write in common formats.",
             "url": "https://github.com/whamlyn/auralib"
