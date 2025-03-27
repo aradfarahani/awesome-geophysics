@@ -11,7 +11,7 @@
 # [<img src="https://cdn.rawgit.com/aradfarahani/awesome-geophysics/master/cover.png">](https://github.com/aradfarahani/awesome-geophysics)
 
 <p align="justify">
-Welcome to <strong>Awesome Geophysics</strong> – A community-curated collection of geophysical resources including software, datasets, educational materials, and more. Whether you're a student just beginning your journey, a researcher pushing the boundaries of the field, or a professional applying cutting-edge methods, this guide is your one-stop destination for software, datasets, educational materials, and much more. Let's explore the Earth's hidden depths and stay connected with the vibrant global geophysics community!
+Welcome to <strong>Awesome Geophysics</strong> – A community-curated collection of geophysical resources including software, datasets, educational materials, and more. `Test` Whether you're a student just beginning your journey, a researcher pushing the boundaries of the field, or a professional applying cutting-edge methods, this guide is your one-stop destination for software, datasets, educational materials, and much more. Let's explore the Earth's hidden depths and stay connected with the vibrant global geophysics community!
 </p>
 
 ---
@@ -73,7 +73,7 @@ Enhance your geophysical workflows with these essential software solutions:
 |----------|-----------------| -----------------|
 | **[`Auralib`](https://github.com/whamlyn/auralib)** | Python package to support investigation of geoscience problems including geophysics, rock physics, petrophysics, and data read/write in common formats. | [![GitHub stars](https://img.shields.io/github/stars/whamlyn/auralib?style=social)](https://github.com/whamlyn/auralib/stargazers) |
 | **[`bh_tomo`](https://github.com/groupeLIAMG/bh_tomo)** | Numba-accelerated computation of surface wave dispersion. | [![GitHub stars](https://img.shields.io/github/stars/groupeLIAMG/bh_tomo?style=social)](https://github.com/groupeLIAMG/bh_tomo/stargazers) |
-| **[`Bruges`](https://github.com/agile-geoscience/bruges/tree/master/bruges)** | Various geophysical equations and tools. | [![GitHub stars](https://img.shields.io/github/stars/master/bruges?style=social)](https://github.com/master/bruges/stargazers) |
+| **[`Bruges`](https://github.com/agilescientific/bruges/tree/main)** | Various geophysical equations and tools. | [![GitHub stars](https://img.shields.io/github/stars/tree/main?style=social)](https://github.com/tree/main/stargazers) |
 | **[`celeri`](https://github.com/brendanjmeade/celeri)** | A python-based package designed to image earthquake cycle activity including the spatial and time varying fault coupling across geometrically complex fault systems at large scales. | [![GitHub stars](https://img.shields.io/github/stars/brendanjmeade/celeri?style=social)](https://github.com/brendanjmeade/celeri/stargazers) |
 | **[`disba`](https://github.com/keurfonluu/disba)** | Borehole radar and seismic tomography package. | [![GitHub stars](https://img.shields.io/github/stars/keurfonluu/disba?style=social)](https://github.com/keurfonluu/disba/stargazers) |
 | **[`emsig`](https://emsig.xyz/)** | Controlled-source electromagnetic modellers for layered (`empymod`) and three-dimensional (`emg3d`) anisotropic media. |  |
@@ -666,7 +666,7 @@ Tools for developing geophysical software and workflows:
 
 Thanks to our many contributors!
 
-[![Contributors](https://contrib.rocks/image?repo=aradfarahani/awesome-geophysics&t=1742885103)](https://github.com/aradfarahani/awesome-geophysics/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=aradfarahani/awesome-geophysics)](https://github.com/aradfarahani/awesome-geophysics/graphs/contributors)
 
 | ▲ [Top](#awesome-geophysics) |
 | --- |
