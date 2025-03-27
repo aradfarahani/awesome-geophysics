@@ -26,7 +26,7 @@ def process_resource(resource, indent_level=0):
         for desc_line in desc_lines:
             lines.append(f"{indent}  {desc_line}")
     if 'resources' in resource:
-        for sub_resource in resource['resources']:
+        for sub_resource in sorted(resource['resources'], key=lambda x: x['name'].lower()):
             lines.extend(process_resource(sub_resource, indent_level + 1))
     return lines
 
@@ -47,10 +47,10 @@ def process_subcategory(subcategory, indent_level=1):
     if 'description' in subcategory:
         lines.append(f"{subcategory['description']}\n")
     if 'resources' in subcategory:
-        for resource in subcategory['resources']:
+        for resource in sorted(subcategory['resources'], key=lambda x: x['name'].lower()):
             lines.extend(process_resource(resource, indent_level))
     if 'subcategories' in subcategory:
-        for sub_subcategory in subcategory['subcategories']:
+        for sub_subcategory in sorted(subcategory['subcategories'], key=lambda x: x['name'].lower()):
             lines.extend(process_subcategory(sub_subcategory, indent_level + 1))
     return lines
 
@@ -65,7 +65,9 @@ def generate_toc(categories, indent=0):
         list: A list of TOC entries with Markdown links.
     """
     toc = []
-    for category in categories:
+    sorted_categories = sorted(categories, key=lambda x: x['name'].lower())
+    
+    for category in sorted_categories:
         name = category['name']
         anchor = name.lower().replace(' ', '-').replace('&', '').replace(',', '').replace('/', '')
         toc.append(f"{'  ' * indent}- [{name}](#{anchor})")
@@ -74,6 +76,7 @@ def generate_toc(categories, indent=0):
     return toc
 
 def github_star_count(url):
+    """Generate GitHub star badge if URL is a GitHub repository."""
     github_stars = ""
     if "github.com" not in url.lower():
         return github_stars
@@ -144,7 +147,8 @@ def generate_markdown_from_json(json_file, output_file):
     md_content.append('')
     
     # Process each category
-    for category in data['AwesomeGeophysics']['categories']:
+    sorted_categories = sorted(data['AwesomeGeophysics']['categories'], key=lambda x: x['name'].lower())
+    for category in sorted_categories:
         name = category['name']
         md_content.append(f"## {name}")
         md_content.append('')
@@ -155,7 +159,8 @@ def generate_markdown_from_json(json_file, output_file):
             # Table format for Software and Tools
             md_content.append('| **Name** | **Description** | **GitHub Stars** |')
             md_content.append('|----------|-----------------| -----------------|')
-            for resource in category['resources']:
+            sorted_resources = sorted(category['resources'], key=lambda x: x['name'].lower())
+            for resource in sorted_resources:
                 res_name = resource.get('name', 'Unnamed Resource')
                 desc = resource.get('description', 'No description available')
                 url = resource.get('url', '#')
@@ -165,11 +170,15 @@ def generate_markdown_from_json(json_file, output_file):
         else:
             # List format for other categories
             if 'resources' in category:
-                for resource in category['resources']:
+                sorted_resources = sorted(category['resources'], key=lambda x: x['name'].lower())
+                for resource in sorted_resources:
                     md_content.extend(process_resource(resource))
+            
             if 'subcategories' in category:
-                for subcategory in category['subcategories']:
+                sorted_subcategories = sorted(category['subcategories'], key=lambda x: x['name'].lower())
+                for subcategory in sorted_subcategories:
                     md_content.extend(process_subcategory(subcategory))
+        
         md_content.append('')
         md_content.append('| ▲ [Top](#awesome-geophysics) |')
         md_content.append('| --- |')
