@@ -73,8 +73,6 @@ def generate_toc(categories, indent=0):
             toc.extend(generate_toc(category['subcategories'], indent + 1))
     return toc
 
-from urllib.parse import urlparse
-
 def github_star_count(url):
     github_stars = ""
     if "github.com" not in url.lower():
