@@ -3,20 +3,23 @@ name: Update README from JSON
 on:
   push:
     paths:
-      - "awesome_geophysics.json" # Trigger on changes to the JSON file
-      - "generate_readme.py" # Trigger on changes to the script
-  workflow_dispatch: # Allows manual triggering
+      - "awesome_geophysics.json"
+      - "generate_readme.py"
+  workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 0" # Runs at 00:00 UTC every Sunday
+    - cron: "0 0 * * 0"
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    # Grant write permissions to the GITHUB_TOKEN
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Needed for the git diff step
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -27,8 +30,7 @@ jobs:
         run: pip install pyyaml
 
       - name: Generate README
-        run: |
-          python generate_readme.py
+        run: python generate_readme.py
 
       - name: Check for changes
         id: git-check
@@ -37,13 +39,10 @@ jobs:
 
       - name: Commit and push changes
         if: steps.git-check.outputs.changes == 'true'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           git commit -m "Auto-update README from JSON [skip ci]" || echo "No changes to commit"
-          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/aradfarahani/awesome-geophysics.git" HEAD:main
-
-
+          # Use GITHUB_TOKEN for authentication
+          git push "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:main
