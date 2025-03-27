@@ -192,6 +192,11 @@
             "url": "https://github.com/keliankaz/recast"
           },
           {
+            "name": "Refrapy",
+            "descriptions": "A program for seismic refraction data processing."
+            "url": "https://github.com/AlgoSismos/Refrapy"
+          },
+          {
             "name": "RGPR",
             "description": "Reads, exports, processes, and plots ground-penetrating radar data.",
             "url": "https://github.com/emanuelhuber/RGPR"
