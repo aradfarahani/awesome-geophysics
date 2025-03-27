@@ -152,6 +152,11 @@
             "url": "https://pyrocko.org/"
           },
           {
+            "name": "PySeis",
+            "description": "Pure python seismic data processing",
+            "url": "https://github.com/stuliveshere/PySeis"
+          },
+          {
             "name": "PySIT",
             "description": "A Toolbox for seismic inversion and seismic imaging.",
             "url": "http://pysit.org"
