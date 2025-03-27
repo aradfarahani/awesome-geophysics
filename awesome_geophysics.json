@@ -32,6 +32,11 @@
             "url": "https://github.com/brendanjmeade/celeri"
           },
           {
+            "name": "deepwave",
+            "description": "Deepwave provides wave propagation modules for PyTorch, for applications such as seismic imaging/inversion. You can use it to perform forward modelling and backpropagation.",
+            "url": "https://github.com/ar4/deepwave"
+          },
+          {
             "name": "disba",
             "description": "Borehole radar and seismic tomography package.",
             "url": "https://github.com/keurfonluu/disba"
@@ -95,6 +100,11 @@
             "name": "GSadjust",
             "description": "GSadjust is a cross-platform graphical interface for processing relative gravity surveys. It provides an interface for data selection, drift evaluation and correction, network adjustment, and integrating data from modern relative (Scintrex, ZLS) and absolute (Micro-g Lacoste) gravity meters. ",
             "url": "https://code.usgs.gov/sgp/gsadjust"
+          },
+          {
+            "name": "hypopy",
+            "description": "HYPOcenter location from arrival time data in PYthon.",
+            "url": "https://github.com/groupeLIAMG/hypopy"
           },
           {
             "name": "hvsrpy",
@@ -290,6 +300,11 @@
             "name": "SWIT",
             "description": "Seismic Waveform Inversion Toolbox (SWIT-1.0) is a 2-D acoustic Full-waveform Inversion (FWI) package implemented in Fortran and Python.",
             "url": "https://github.com/seisfwi/SWIT"
+          },
+          {
+            "name": "veros",
+            "description": "Veros, *the versatile ocean simulator*, aims to be the swiss army knife of ocean modeling. It is a full-fledged primitive equation ocean model that supports anything between idealized toy models and [realistic, high-resolution, global ocean simulations](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021MS002717).",
+            "url": "https://github.com/team-ocean/veros"
           },
           {
             "name": "XTgeo",
