@@ -30,7 +30,7 @@ jobs:
         run: pip install pyyaml
 
       - name: Generate README
-        run: python generate_readme.py
+        run: python scripts/generate_readme.py
 
       - name: Check for changes
         id: git-check
