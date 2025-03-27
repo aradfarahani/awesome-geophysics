@@ -50,7 +50,7 @@ def process_subcategory(subcategory, indent_level=1):
         for resource in sorted(subcategory['resources'], key=lambda x: x['name'].lower()):
             lines.extend(process_resource(resource, indent_level))
     if 'subcategories' in subcategory:
-        for sub_subcategory in sorted(subcategory['subcategories'], key=lambda x: x['name'].lower()):
+        for sub_subcategory in subcategory['subcategories']:
             lines.extend(process_subcategory(sub_subcategory, indent_level + 1))
     return lines
 
@@ -65,9 +65,7 @@ def generate_toc(categories, indent=0):
         list: A list of TOC entries with Markdown links.
     """
     toc = []
-    sorted_categories = sorted(categories, key=lambda x: x['name'].lower())
-    
-    for category in sorted_categories:
+    for category in categories:
         name = category['name']
         anchor = name.lower().replace(' ', '-').replace('&', '').replace(',', '').replace('/', '')
         toc.append(f"{'  ' * indent}- [{name}](#{anchor})")
@@ -147,8 +145,7 @@ def generate_markdown_from_json(json_file, output_file):
     md_content.append('')
     
     # Process each category
-    sorted_categories = sorted(data['AwesomeGeophysics']['categories'], key=lambda x: x['name'].lower())
-    for category in sorted_categories:
+    for category in data['AwesomeGeophysics']['categories']:  # Remove sorting
         name = category['name']
         md_content.append(f"## {name}")
         md_content.append('')
@@ -159,6 +156,7 @@ def generate_markdown_from_json(json_file, output_file):
             # Table format for Software and Tools
             md_content.append('| **Name** | **Description** | **GitHub Stars** |')
             md_content.append('|----------|-----------------| -----------------|')
+            # Sort only resources
             sorted_resources = sorted(category['resources'], key=lambda x: x['name'].lower())
             for resource in sorted_resources:
                 res_name = resource.get('name', 'Unnamed Resource')
@@ -175,8 +173,7 @@ def generate_markdown_from_json(json_file, output_file):
                     md_content.extend(process_resource(resource))
             
             if 'subcategories' in category:
-                sorted_subcategories = sorted(category['subcategories'], key=lambda x: x['name'].lower())
-                for subcategory in sorted_subcategories:
+                for subcategory in category['subcategories']:
                     md_content.extend(process_subcategory(subcategory))
         
         md_content.append('')
