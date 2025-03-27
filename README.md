@@ -8,7 +8,7 @@
 
 # Awesome Geophysics
 
-# [<img src="https://cdn.rawgit.com/aradfarahani/awesome-geophysics/master/cover.png">](https://github.com/aradfarahani/awesome-geophysics)
+# [<img src="https://cdn.rawgit.com/aradfarahani/awesome-geophysics/main/cover.png">](https://github.com/aradfarahani/awesome-geophysics)
 
 <p align="justify">
 Welcome to <strong>Awesome Geophysics</strong> – A community-curated collection of geophysical resources including software, datasets, educational materials, and more. `Test` Whether you're a student just beginning your journey, a researcher pushing the boundaries of the field, or a professional applying cutting-edge methods, this guide is your one-stop destination for software, datasets, educational materials, and much more. Let's explore the Earth's hidden depths and stay connected with the vibrant global geophysics community!
