@@ -1,4 +1,5 @@
 import json
+from urllib.parse import urlparse
 
 def process_resource(resource, indent_level=0):
     """Process a resource and return Markdown lines with proper indentation.
@@ -72,22 +73,20 @@ def generate_toc(categories, indent=0):
             toc.extend(generate_toc(category['subcategories'], indent + 1))
     return toc
 
+from urllib.parse import urlparse
+
 def github_star_count(url):
     github_stars = ""
-    # Check if URL points to GitHub at all
     if "github.com" not in url.lower():
-        return github_stars  # Return empty
+        return github_stars
 
-    # Remove trailing slash, if any
-    clean_url = url.rstrip("/")
+    parsed = urlparse(url)
+    # Remove any empty parts (e.g. from leading '/')
+    path_parts = [part for part in parsed.path.split('/') if part]
 
-    # Split into parts
-    parts = clean_url.split("/")
-    # We expect something like ["https:", "", "github.com", "<USERNAME>", "<REPO>"]
-
-    if len(parts) >= 5:
-        github_username = parts[-2]
-        github_repo = parts[-1]
+    if len(path_parts) >= 2:
+        github_username = path_parts[0]
+        github_repo = path_parts[1]
         github_stars = (
             f"[![GitHub stars](https://img.shields.io/github/stars/{github_username}/{github_repo}?style=social)]"
             f"(https://github.com/{github_username}/{github_repo}/stargazers)"
