@@ -257,6 +257,11 @@
             "url": "https://github.com/equinor/seismic-zfp"
           },
           {
+            "name": "spyro",
+            "description": "Seismic parallel inversion and reconstruction optimization framework",
+            "url": "https://github.com/NDF-Poli-USP/spyro"
+          },
+          {
             "name": "synthoseis",
             "description": "Synthoseis is an open-source, Python-based tool used for generating pseudo-random seismic data.",
             "url": "https://github.com/sede-open/synthoseis"
@@ -270,6 +275,11 @@
             "name": "Surfer",
             "description": "A contouring and 3D mapping software, great for visualizing subsurface geophysical data.",
             "url": "https://www.goldensoftware.com/products/surfer/"
+          },
+          {
+            "name": "SWIT",
+            "description": "Seismic Waveform Inversion Toolbox (SWIT-1.0) is a 2-D acoustic Full-waveform Inversion (FWI) package implemented in Fortran and Python.",
+            "url": "https://github.com/seisfwi/SWIT"
           },
           {
             "name": "XTgeo",
