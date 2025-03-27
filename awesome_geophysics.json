@@ -552,7 +552,12 @@
                 "name": "ErSE 210 Seismology course",
                 "description": "Teaching material for ErSE 210 Seismology course *GitHub Repo*.",
                 "url": "https://github.com/DIG-Kaust/Seismology"
-              }
+              },
+              {
+                "name": "Remote Online Sessions for Emerging Seismologists (ROSES)",
+                "description": "Targeted towards advanced Ph.D. students, who have used Python before and are familiar navigating in Linux/Unix. Lectures cover topics at the intersection of Seismology and Data Science.",
+                "url": "https://github.com/roseseismo"
+              {
             ]
           },
           {
