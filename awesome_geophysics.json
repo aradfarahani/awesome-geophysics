@@ -527,7 +527,13 @@
           {
             "name": "Online Courses and Tutorials",
             "description": "Expand your knowledge with these online courses and tutorials:",
-            "resources": []
+            "resources": [
+              {
+                "name": "ErSE 210 Seismology course",
+                "description": "Teaching material for ErSE 210 Seismology course *GitHub Repo*.",
+                "url": "https://github.com/DIG-Kaust/Seismology"
+              }
+            ]
           },
           {
             "name": "Workshops and Webinars",
