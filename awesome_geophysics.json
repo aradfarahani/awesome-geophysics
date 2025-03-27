@@ -12,6 +12,11 @@
         "description": "Enhance your geophysical workflows with these essential software solutions:",
         "resources": [
           {
+            "name": "EQcorrscan",
+            "description": "A python package for the detection and analysis of repeating and near-repeating earthquakes.",
+            "url": "https://github.com/eqcorrscan/EQcorrscan"
+          },
+          {
             "name": "Auralib",
             "description": "Python package to support investigation of geoscience problems including geophysics, rock physics, petrophysics, and data read/write in common formats.",
             "url": "https://github.com/whamlyn/auralib"
@@ -557,6 +562,11 @@
                 "name": "Remote Online Sessions for Emerging Seismologists (ROSES)",
                 "description": "Targeted towards advanced Ph.D. students, who have used Python before and are familiar navigating in Linux/Unix. Lectures cover topics at the intersection of Seismology and Data Science.",
                 "url": "https://github.com/roseseismo"
+              },
+              {
+                "name": "Theory-of-seismic-waves-II",
+                "description": "Course material for the lecture `Theory of seismic waves II` (SS 2019) at the Institute of Geosciences (Department of Geophysics), Christian-Albrechts-University Kiel",
+                "url": "https://github.com/daniel-koehn/Theory-of-seismic-waves-II"
               }
             ]
           },
