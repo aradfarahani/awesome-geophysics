@@ -47,7 +47,7 @@
             "url": "https://www.fatiando.org/"
           },
           {
-            "name": "First Break Picking",
+            "name": "first_break_picking",
             "description": "A Python package for automatic first break picking in seismic data using deep learning.",
             "url": "https://github.com/geo-stack/first_break_picking"
           },
