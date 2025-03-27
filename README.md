@@ -255,6 +255,8 @@ Focused resources on specific geophysical sub-disciplines:
 
 Expand your knowledge with these online courses and tutorials:
 
+ - **[`ErSE 210 Seismology course`](https://github.com/DIG-Kaust/Seismology)**
+   Teaching material for ErSE 210 Seismology course *GitHub Repo*.
 
 ### Workshops and Webinars
 
