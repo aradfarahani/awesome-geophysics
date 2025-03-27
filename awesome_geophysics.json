@@ -137,6 +137,11 @@
             "url": "https://github.com/pastas/pastas"
           },
           {
+            "name": "pyekfmm",
+            "description": "A python package for 3D fast-marching-based traveltime calculation and its applications in seismology.",
+            "url": "https://github.com/aaspip/pyekfmm"
+          },
+          {
             "name": "PyFWI",
             "description": "It can be used to perform full-waveform inversion (FWI) and time-lapse FWI of seismic data.",
             "url": "https://pyfwi.readthedocs.io/en/latest"
