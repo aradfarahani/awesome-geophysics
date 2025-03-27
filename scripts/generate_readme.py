@@ -118,7 +118,7 @@ def generate_markdown_from_json(json_file, output_file):
     # Title and cover image
     md_content.append('# Awesome Geophysics')
     md_content.append('')
-    md_content.append('# [<img src="https://cdn.rawgit.com/aradfarahani/awesome-geophysics/master/cover.png">](https://github.com/aradfarahani/awesome-geophysics)')
+    md_content.append('# [<img src="https://cdn.rawgit.com/aradfarahani/awesome-geophysics/main/cover.png">](https://github.com/aradfarahani/awesome-geophysics)')
     md_content.append('')
     
     # Introduction
