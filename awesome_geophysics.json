@@ -193,7 +193,7 @@
           },
           {
             "name": "Refrapy",
-            "descriptions": "A program for seismic refraction data processing."
+            "descriptions": "A program for seismic refraction data processing.",
             "url": "https://github.com/AlgoSismos/Refrapy"
           },
           {
