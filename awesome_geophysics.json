@@ -557,7 +557,7 @@
                 "name": "Remote Online Sessions for Emerging Seismologists (ROSES)",
                 "description": "Targeted towards advanced Ph.D. students, who have used Python before and are familiar navigating in Linux/Unix. Lectures cover topics at the intersection of Seismology and Data Science.",
                 "url": "https://github.com/roseseismo"
-              {
+              }
             ]
           },
           {
