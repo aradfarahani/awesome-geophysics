@@ -1,18 +1,19 @@
-name: Validate new addition to awesome_geophysics.json
-# This workflow validates new entries in the awesome_geophysics.json file.
+name: Validate New Entries in Awesome Geophysics
 
 on:
   push:
     paths:
-      - "awesome_geophysics.json" # Trigger on changes to the JSON file
-      - "scripts/validate_new_entries.py" # Trigger on changes to the validation script
+      - "awesome_geophysics.json"
+      - "scripts/validate_new_entries.py"
     branches: [main]
+  
   pull_request:
-    branches: [main]
     paths:
-      - "awesome_geophysics.json" # Trigger on pull requests that modify the JSON file
-      - "scripts/validate_new_entries.py" # Trigger on pull requests that modify the validation script
-  workflow_dispatch: # Allow manual triggering of the workflow
+      - "awesome_geophysics.json"
+      - "scripts/validate_new_entries.py"
+    branches: [main]
+  
+  workflow_dispatch:
 
 jobs:
   validate:
@@ -29,4 +30,8 @@ jobs:
         run: pip install requests
 
       - name: Run validation
-        run: python scripts/validate_new_entries.py
+        shell: bash
+        run: |
+          python scripts/validate_new_entries.py 2>&1 | while read line; do
+            echo "::error::$line"
+          done
