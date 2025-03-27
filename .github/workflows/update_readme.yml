@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Needed for the git diff step
 
@@ -35,13 +35,15 @@ jobs:
         run: |
           git diff --quiet README.md || echo "changes=true" >> $GITHUB_OUTPUT
 
-      - name: Commit and push changes
+      - name: Create Pull Request
         if: steps.git-check.outputs.changes == 'true'
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add README.md
-          git commit -m "Auto-update README from JSON [skip ci]"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Auto-update README from JSON [skip ci]"
+          title: "Auto-update README from JSON"
+          body: "Automated README update from JSON data"
+          branch: "update-readme"
+          base: "main" # Target branch (defaults to default branch if omitted)
+          delete-branch: true # Automatically delete the branch after merge
+          labels: "automated" # Optional: Add labels to the PR
