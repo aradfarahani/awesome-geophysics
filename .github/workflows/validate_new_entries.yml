@@ -1,25 +1,27 @@
-name: Validate New Entries in Awesome Geophysics
+name: Validate New Entries
 
 on:
-  push:
-    paths:
-      - "awesome_geophysics.json"
-      - "scripts/validate_new_entries.py"
-    branches: [main]
-  
   pull_request:
+    branches: [main]
     paths:
       - "awesome_geophysics.json"
-      - "scripts/validate_new_entries.py"
+  push:
     branches: [main]
-  
-  workflow_dispatch:
+    paths:
+      - "awesome_geophysics.json"
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Get previous version
+        run: |
+          git show HEAD^:awesome_geophysics.json > old.json
+          [ -s old.json ] || echo '{"AwesomeGeophysics": {}}' > old.json
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -30,8 +32,7 @@ jobs:
         run: pip install requests
 
       - name: Run validation
-        shell: bash
         run: |
-          python scripts/validate_new_entries.py 2>&1 | while read line; do
+          python scripts/validate_new_entries.py old.json awesome_geophysics.json 2>&1 | while read line; do
             echo "::error::$line"
           done
