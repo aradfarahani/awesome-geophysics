@@ -261,6 +261,8 @@ Expand your knowledge with these online courses and tutorials:
 
  - **[`ErSE 210 Seismology course`](https://github.com/DIG-Kaust/Seismology)**
    Teaching material for ErSE 210 Seismology course *GitHub Repo*.
+ - **[`Remote Online Sessions for Emerging Seismologists (ROSES)`](https://github.com/roseseismo)**
+   Targeted towards advanced Ph.D. students, who have used Python before and are familiar navigating in Linux/Unix. Lectures cover topics at the intersection of Seismology and Data Science.
 
 ### Workshops and Webinars
 
