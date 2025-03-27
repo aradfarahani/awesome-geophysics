@@ -47,6 +47,11 @@
             "url": "https://www.fatiando.org/"
           },
           {
+            "name": "first_break_picking",
+            "description": "A Python package for automatic first break picking in seismic data using deep learning.",
+            "url": "https://github.com/geo-stack/first_break_picking"
+          },
+          {
             "name": "Front End",
             "description": "Preprocess seismic data with various functions, such as resampling, vertical stacking, nodal data assembling, trace swapping, and format conversion.",
             "url": "https://geogiga.com/products/frontend/"
