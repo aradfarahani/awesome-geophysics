@@ -92,6 +92,11 @@
             "url": "https://github.com/NSGeophysics/GPRPy"
           },
           {
+            "name": "GSadjust",
+            "description": "GSadjust is a cross-platform graphical interface for processing relative gravity surveys. It provides an interface for data selection, drift evaluation and correction, network adjustment, and integrating data from modern relative (Scintrex, ZLS) and absolute (Micro-g Lacoste) gravity meters. ",
+            "url": "https://code.usgs.gov/sgp/gsadjust"
+          },
+          {
             "name": "hvsrpy",
             "description": "A Python package for horizontal-to-vertical spectral ratio processing.",
             "url": "https://github.com/jpvantassel/hvsrpy"
