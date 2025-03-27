@@ -120,9 +120,11 @@ Enhance your geophysical workflows with these essential software solutions:
 | **[`Segyio`](https://github.com/equinor/segyio)** | Fast library for seismic SEGY files. | [![GitHub stars](https://img.shields.io/github/stars/equinor/segyio?style=social)](https://github.com/equinor/segyio/stargazers) |
 | **[`Seismic Un*x`](https://wiki.seismic-unix.org/start)** | A powerful toolkit for seismic data processing. |  |
 | **[`SeismicZFP`](https://github.com/equinor/seismic-zfp)** | Convert SEG-Y/ZGY files to compressed [SGZ files](https://github.com/equinor/seismic-zfp/blob/master/docs/file-specification.md) & retrieve arbitrary sub-volumes from these, fast. | [![GitHub stars](https://img.shields.io/github/stars/equinor/seismic-zfp?style=social)](https://github.com/equinor/seismic-zfp/stargazers) |
+| **[`spyro`](https://github.com/NDF-Poli-USP/spyro)** | Seismic parallel inversion and reconstruction optimization framework | [![GitHub stars](https://img.shields.io/github/stars/NDF-Poli-USP/spyro?style=social)](https://github.com/NDF-Poli-USP/spyro/stargazers) |
 | **[`synthoseis`](https://github.com/sede-open/synthoseis)** | Synthoseis is an open-source, Python-based tool used for generating pseudo-random seismic data. | [![GitHub stars](https://img.shields.io/github/stars/sede-open/synthoseis?style=social)](https://github.com/sede-open/synthoseis/stargazers) |
 | **[`swprocess`](https://github.com/jpvantassel/swprocess)** | A Python package for surface wave processing. | [![GitHub stars](https://img.shields.io/github/stars/jpvantassel/swprocess?style=social)](https://github.com/jpvantassel/swprocess/stargazers) |
 | **[`Surfer`](https://www.goldensoftware.com/products/surfer/)** | A contouring and 3D mapping software, great for visualizing subsurface geophysical data. |  |
+| **[`SWIT`](https://github.com/seisfwi/SWIT)** | Seismic Waveform Inversion Toolbox (SWIT-1.0) is a 2-D acoustic Full-waveform Inversion (FWI) package implemented in Fortran and Python. | [![GitHub stars](https://img.shields.io/github/stars/seisfwi/SWIT?style=social)](https://github.com/seisfwi/SWIT/stargazers) |
 | **[`XTgeo`](https://xtgeo.readthedocs.io/en/latest)** | Python library with C backend to support manipulation of (oil industry) subsurface reservoir modelling. |  |
 
 
