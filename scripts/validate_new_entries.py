@@ -103,3 +103,4 @@ if __name__ == "__main__":
         print("Usage: python validate_new_entries.py <old_file> <new_file>")
         sys.exit(1)
     main(sys.argv[1], sys.argv[2])
+    
