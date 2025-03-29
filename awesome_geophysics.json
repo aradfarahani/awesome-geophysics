@@ -267,6 +267,11 @@
             "url": "https://github.com/JohnWStockwellJr/SeisUnix"
           },
           {
+            "name": "SeisWiz",
+            "description": "The ultimate lightweight Matplotlib-based seismic volume viewer with multi-view support and horizon visualization capabilities.",
+            "url": "https://github.com/amustafa9/SeisWiz"
+          },
+          {
             "name": "Segyio",
             "description": "Fast library for seismic SEGY files.",
             "url": "https://github.com/equinor/segyio"
