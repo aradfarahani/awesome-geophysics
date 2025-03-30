@@ -6,7 +6,6 @@ on:
     paths:
       - "awesome_geophysics.json"
   push:
-    branches: [main]
     paths:
       - "awesome_geophysics.json"
 
