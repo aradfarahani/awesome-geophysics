@@ -112,8 +112,8 @@ def generate_markdown_from_json(json_file, output_file):
 )
     md_content.append(
     '<a href="https://github.com/aradfarahani/awesome-geophysics">'
-    '<img src="https://img.shields.io/static/v1?label=🌟&message=If%20Useful&style=flat&color=BC4E99" alt="Star Badge"/>'
-    '</a>'
+    '<img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=flat&color=BC4E99" alt="Star Badge"/>'
+    '</a>'  
 )
 
     md_content.append(
