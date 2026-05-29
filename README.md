@@ -463,6 +463,8 @@ Advance your geophysical career with these resources:
   Job listings, career advice, and networking opportunities tailored for geoscientists.
 - **[`SEG Career Resources`](https://seg.org/Career-Services)**
   Tools for professional development including mentoring programs, workshops, and job postings.
+- **[`Hanzilla Jobs — Sciences`](https://jobs.hanzilla.co/sciences/)**
+  Daily-updated Canadian student and recent-graduate job board with science, research, environmental, engineering, internship, co-op, new-grad, junior, and entry-level roles.
 
 | ▲ [Top](#awesome-geophysics) |
 | --- |
