@@ -1222,6 +1222,11 @@
                 "name": "Fatiando a Terra",
                 "description": "For gravity & magnetics modeling.",
                 "url": "https://www.fatiando.org/"
+              },
+              {
+                "name": "Awesome Mineral Exploration",
+                "description": "Curated list of open-source software for mineral exploration, from geophysics and inversion to drillholes and geochemistry.",
+                "url": "https://github.com/XploraHub/awesome-mineral-exploration"
               }
             ]
           },
