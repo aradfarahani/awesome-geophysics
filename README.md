@@ -632,6 +632,8 @@ Shell scripting is crucial for automating repetitive geophysical workflows.
 
 Tools and libraries for geophysical programming and analysis:
 
+ - **[`Awesome Mineral Exploration`](https://github.com/XploraHub/awesome-mineral-exploration)**
+   Curated list of open-source software for mineral exploration, from geophysics and inversion to drillholes and geochemistry.
  - **[`Fatiando a Terra`](https://www.fatiando.org/)**
    For gravity & magnetics modeling.
  - **[`ObsPy`](https://github.com/obspy/obspy)**
